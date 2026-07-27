@@ -12,6 +12,22 @@
 </picture>
 </a>
 
+<br/>
+
+<!-- Typing SVG -->
+<a href="https://github.com/DevChiniwala">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=50&lines=Building+the+infrastructure+AI+agents+run+on...;Context+Engineering+%C3%97+Agentic+Systems+%C3%97+Knowledge+Graphs;Systems+that+retrieve%2C+reason%2C+learn%2C+and+scale" alt="Typing SVG"/>
+</a>
+
+<br/>
+
+<!-- Profile Badges -->
+<img src="https://komarev.com/ghpvc/?username=DevChiniwala&style=flat-square&color=00E5FF&label=PROFILE+VIEWS" alt="Profile Views"/>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/github/followers/DevChiniwala?style=flat-square&color=00E5FF&labelColor=080B10&label=FOLLOWERS" alt="Followers"/>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/github/stars/DevChiniwala?style=flat-square&color=00E5FF&labelColor=080B10&label=STARS&affiliations=OWNER" alt="Stars"/>
+
 </div>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
@@ -114,6 +130,26 @@
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
+<!-- ═══════════ DOCTRINE ═══════════ -->
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  DOCTRINE                                                    │
+│                                                              │
+│  01 — Agents need memory, not just prompts                   │
+│  02 — Context is the new fine-tuning                         │
+│  03 — Every system must explain its reasoning                │
+│  04 — Retrieval beats generation when truth matters          │
+│  05 — Ship production systems, not demos                     │
+└─────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+<img src="./assets/divider.svg" alt="" width="100%"/>
+
 <!-- ═══════════ 09 · GITHUB ANALYTICS ═══════════ -->
 
 <div align="center">
@@ -141,6 +177,10 @@
 
 ```
 > ESTABLISHING CONNECTION...
+```
+
+```bash
+  npx devcard0707
 ```
 
 <br/>

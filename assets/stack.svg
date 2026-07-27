@@ -1,88 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 820" width="920" height="820">
-  <!-- Background -->
-  <rect width="920" height="820" fill="#080B10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="920" height="520"
+     font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace">
 
-  <!-- Section header -->
-  <text x="24" y="28" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#00E5FF" letter-spacing="2" font-weight="700">&#9654; STACK</text>
-  <text x="820" y="28" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E" letter-spacing="1" text-anchor="end">52 TOOLS &#8226; AI SYSTEMS</text>
-  <line x1="24" y1="40" x2="896" y2="40" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect width="920" height="520" fill="#080B10"/>
+  <rect x="0.5" y="0.5" width="919" height="519" fill="none" stroke="#00E5FF" stroke-width="1"/>
 
-  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace">
+  <!-- HEADER -->
+  <text x="32" y="42" font-size="14" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">&#9654; STACK</text>
+  <text x="888" y="42" font-size="11" fill="#7A8A9E" text-anchor="end" letter-spacing="0.1em">52 TOOLS · AI SYSTEMS</text>
+  <line x1="32" y1="58" x2="888" y2="58" stroke="#10141D" stroke-width="1"/>
 
-    <!-- LANGUAGES -->
-    <text x="24" y="72" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">LANGUAGES</text>
-    <text x="150" y="72" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="170" y="72" font-size="11" fill="#F8FAFC" letter-spacing="1">PYTHON &#8226; TYPESCRIPT &#8226; JAVASCRIPT &#8226; JAVA &#8226; SQL &#8226; C++ &#8226; GO &#8226; BASH</text>
+  <!-- ROW 1 — LANGUAGES -->
+  <text x="32" y="90" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">LANGUAGES</text>
+  <text x="180" y="90" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="210" y="90" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">PYTHON<tspan fill="#00E5FF">  ·  </tspan>TYPESCRIPT<tspan fill="#00E5FF">  ·  </tspan>JAVASCRIPT<tspan fill="#00E5FF">  ·  </tspan>JAVA<tspan fill="#00E5FF">  ·  </tspan>SQL<tspan fill="#00E5FF">  ·  </tspan>C++<tspan fill="#00E5FF">  ·  </tspan>GO<tspan fill="#00E5FF">  ·  </tspan>BASH</text>
+  <line x1="32" y1="108" x2="888" y2="108" stroke="#10141D" stroke-width="1"/>
 
-    <!-- AI / LLM -->
-    <text x="24" y="112" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">AI &#8226; LLM</text>
-    <text x="110" y="112" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="130" y="112" font-size="11" fill="#F8FAFC" letter-spacing="1">PYTORCH &#8226; TENSORFLOW &#8226; TRANSFORMERS &#8226; LANGCHAIN &#8226; LANGGRAPH</text>
-    <text x="130" y="132" font-size="11" fill="#F8FAFC" letter-spacing="1">LLAMAINDEX &#8226; DSPY &#8226; CREWAI &#8226; AUTOGEN &#8226; HUGGING FACE</text>
-    <text x="130" y="152" font-size="11" fill="#F8FAFC" letter-spacing="1">OPENAI &#8226; ANTHROPIC &#8226; GEMINI &#8226; OLLAMA &#8226; VLLM &#8226; OPENROUTER</text>
-    <text x="130" y="172" font-size="11" fill="#F8FAFC" letter-spacing="1">PROMPT ENGINEERING &#8226; AGENTIC AI</text>
+  <!-- ROW 2 — AI · LLM -->
+  <text x="32" y="138" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">AI · LLM</text>
+  <text x="180" y="138" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="210" y="130" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">PYTORCH<tspan fill="#00E5FF">  ·  </tspan>TENSORFLOW<tspan fill="#00E5FF">  ·  </tspan>TRANSFORMERS<tspan fill="#00E5FF">  ·  </tspan>LANGCHAIN<tspan fill="#00E5FF">  ·  </tspan>LANGGRAPH</text>
+  <text x="210" y="150" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">LLAMAINDEX<tspan fill="#00E5FF">  ·  </tspan>DSPY<tspan fill="#00E5FF">  ·  </tspan>CREWAI<tspan fill="#00E5FF">  ·  </tspan>AUTOGEN<tspan fill="#00E5FF">  ·  </tspan>HUGGING FACE</text>
+  <text x="210" y="170" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">OPENAI<tspan fill="#00E5FF">  ·  </tspan>ANTHROPIC<tspan fill="#00E5FF">  ·  </tspan>GEMINI<tspan fill="#00E5FF">  ·  </tspan>OLLAMA<tspan fill="#00E5FF">  ·  </tspan>VLLM<tspan fill="#00E5FF">  ·  </tspan>OPENROUTER</text>
+  <line x1="32" y1="188" x2="888" y2="188" stroke="#10141D" stroke-width="1"/>
 
-    <!-- RAG / KNOWLEDGE -->
-    <text x="24" y="212" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">RAG &#8226; KNOWLEDGE</text>
-    <text x="180" y="212" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="200" y="212" font-size="11" fill="#F8FAFC" letter-spacing="1">GRAPHRAG &#8226; KNOWLEDGE GRAPHS &#8226; VECTOR SEARCH</text>
-    <text x="200" y="232" font-size="11" fill="#F8FAFC" letter-spacing="1">HYBRID SEARCH &#8226; BM25 &#8226; SEMANTIC SEARCH</text>
-    <text x="200" y="252" font-size="11" fill="#F8FAFC" letter-spacing="1">CONTEXT ENGINEERING &#8226; CONTEXT COMPRESSION</text>
-    <text x="200" y="272" font-size="11" fill="#F8FAFC" letter-spacing="1">EMBEDDINGS &#8226; SENTENCE TRANSFORMERS</text>
+  <!-- ROW 3 — RAG · KNOWLEDGE -->
+  <text x="32" y="218" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">RAG · KNOWLEDGE</text>
+  <text x="210" y="218" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="240" y="210" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">GRAPHRAG<tspan fill="#00E5FF">  ·  </tspan>KNOWLEDGE GRAPHS<tspan fill="#00E5FF">  ·  </tspan>VECTOR SEARCH<tspan fill="#00E5FF">  ·  </tspan>HYBRID SEARCH</text>
+  <text x="240" y="230" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">BM25<tspan fill="#00E5FF">  ·  </tspan>SEMANTIC SEARCH<tspan fill="#00E5FF">  ·  </tspan>CONTEXT ENGINEERING<tspan fill="#00E5FF">  ·  </tspan>EMBEDDINGS</text>
+  <line x1="32" y1="248" x2="888" y2="248" stroke="#10141D" stroke-width="1"/>
 
-    <!-- VECTOR DATABASES -->
-    <text x="24" y="312" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">VECTOR DATABASES</text>
-    <text x="195" y="312" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="215" y="312" font-size="11" fill="#F8FAFC" letter-spacing="1">PINECONE &#8226; QDRANT &#8226; CHROMA &#8226; WEAVIATE &#8226; MILVUS &#8226; FAISS</text>
+  <!-- ROW 4 — VECTOR · DATA -->
+  <text x="32" y="278" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">VECTOR · DATA</text>
+  <text x="195" y="278" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="225" y="270" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">PINECONE<tspan fill="#00E5FF">  ·  </tspan>QDRANT<tspan fill="#00E5FF">  ·  </tspan>CHROMA<tspan fill="#00E5FF">  ·  </tspan>WEAVIATE<tspan fill="#00E5FF">  ·  </tspan>MILVUS<tspan fill="#00E5FF">  ·  </tspan>FAISS</text>
+  <text x="225" y="290" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">POSTGRESQL<tspan fill="#00E5FF">  ·  </tspan>MONGODB<tspan fill="#00E5FF">  ·  </tspan>REDIS<tspan fill="#00E5FF">  ·  </tspan>NEO4J<tspan fill="#00E5FF">  ·  </tspan>SUPABASE</text>
+  <line x1="32" y1="308" x2="888" y2="308" stroke="#10141D" stroke-width="1"/>
 
-    <!-- BACKEND -->
-    <text x="24" y="352" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">BACKEND</text>
-    <text x="110" y="352" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="130" y="352" font-size="11" fill="#F8FAFC" letter-spacing="1">FASTAPI &#8226; NODE.JS &#8226; EXPRESS &#8226; SPRING BOOT</text>
-    <text x="130" y="372" font-size="11" fill="#F8FAFC" letter-spacing="1">REST APIs &#8226; GRAPHQL &#8226; WEBSOCKETS</text>
+  <!-- ROW 5 — BACKEND -->
+  <text x="32" y="338" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">BACKEND</text>
+  <text x="145" y="338" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="175" y="338" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">FASTAPI<tspan fill="#00E5FF">  ·  </tspan>NODE.JS<tspan fill="#00E5FF">  ·  </tspan>EXPRESS<tspan fill="#00E5FF">  ·  </tspan>SPRING BOOT<tspan fill="#00E5FF">  ·  </tspan>GRAPHQL<tspan fill="#00E5FF">  ·  </tspan>WEBSOCKETS</text>
+  <line x1="32" y1="356" x2="888" y2="356" stroke="#10141D" stroke-width="1"/>
 
-    <!-- FRONTEND -->
-    <text x="24" y="412" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">FRONTEND</text>
-    <text x="120" y="412" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="140" y="412" font-size="11" fill="#F8FAFC" letter-spacing="1">REACT &#8226; NEXT.JS &#8226; TAILWIND CSS &#8226; FRAMER MOTION &#8226; VITE</text>
+  <!-- ROW 6 — FRONTEND -->
+  <text x="32" y="386" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">FRONTEND</text>
+  <text x="155" y="386" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="185" y="386" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">REACT<tspan fill="#00E5FF">  ·  </tspan>NEXT.JS<tspan fill="#00E5FF">  ·  </tspan>TAILWIND CSS<tspan fill="#00E5FF">  ·  </tspan>FRAMER MOTION<tspan fill="#00E5FF">  ·  </tspan>VITE</text>
+  <line x1="32" y1="404" x2="888" y2="404" stroke="#10141D" stroke-width="1"/>
 
-    <!-- DATABASES -->
-    <text x="24" y="452" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">DATABASES</text>
-    <text x="130" y="452" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="150" y="452" font-size="11" fill="#F8FAFC" letter-spacing="1">POSTGRESQL &#8226; MONGODB &#8226; REDIS &#8226; NEO4J &#8226; SQLITE &#8226; SUPABASE</text>
+  <!-- ROW 7 — INFRA · CLOUD -->
+  <text x="32" y="434" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">INFRA · CLOUD</text>
+  <text x="190" y="434" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="220" y="426" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">DOCKER<tspan fill="#00E5FF">  ·  </tspan>KUBERNETES<tspan fill="#00E5FF">  ·  </tspan>AWS<tspan fill="#00E5FF">  ·  </tspan>GCP<tspan fill="#00E5FF">  ·  </tspan>VERTEX AI<tspan fill="#00E5FF">  ·  </tspan>TERRAFORM</text>
+  <text x="220" y="446" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">GITHUB ACTIONS<tspan fill="#00E5FF">  ·  </tspan>CLOUD RUN<tspan fill="#00E5FF">  ·  </tspan>FIREBASE<tspan fill="#00E5FF">  ·  </tspan>PUB/SUB</text>
+  <line x1="32" y1="464" x2="888" y2="464" stroke="#10141D" stroke-width="1"/>
 
-    <!-- INFRA / CLOUD -->
-    <text x="24" y="492" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">INFRA &#8226; CLOUD</text>
-    <text x="155" y="492" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="175" y="492" font-size="11" fill="#F8FAFC" letter-spacing="1">DOCKER &#8226; DOCKER COMPOSE &#8226; KUBERNETES</text>
-    <text x="175" y="512" font-size="11" fill="#F8FAFC" letter-spacing="1">AWS &#8226; GOOGLE CLOUD &#8226; VERTEX AI</text>
-    <text x="175" y="532" font-size="11" fill="#F8FAFC" letter-spacing="1">FIREBASE &#8226; CLOUD RUN &#8226; CLOUD FUNCTIONS</text>
-    <text x="175" y="552" font-size="11" fill="#F8FAFC" letter-spacing="1">PUB/SUB &#8226; GITHUB ACTIONS &#8226; TERRAFORM</text>
+  <!-- ROW 8 — OBSERVE · RESEARCH -->
+  <text x="32" y="492" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="0.16em">OBSERVE · RESEARCH</text>
+  <text x="240" y="492" font-size="12" fill="#00E5FF">&#9473;&#9473;</text>
+  <text x="270" y="492" font-size="12" font-weight="500" fill="#F8FAFC" letter-spacing="0.03em">LANGSMITH<tspan fill="#00E5FF">  ·  </tspan>OPENTELEMETRY<tspan fill="#00E5FF">  ·  </tspan>GRAFANA<tspan fill="#00E5FF">  ·  </tspan>NUMPY<tspan fill="#00E5FF">  ·  </tspan>PANDAS<tspan fill="#00E5FF">  ·  </tspan>JUPYTER</text>
 
-    <!-- OBSERVABILITY -->
-    <text x="24" y="592" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">OBSERVABILITY</text>
-    <text x="165" y="592" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="185" y="592" font-size="11" fill="#F8FAFC" letter-spacing="1">LANGSMITH &#8226; OPENTELEMETRY &#8226; GRAFANA</text>
-    <text x="185" y="612" font-size="11" fill="#F8FAFC" letter-spacing="1">PROMETHEUS &#8226; SENTRY</text>
-
-    <!-- DATA SCIENCE -->
-    <text x="24" y="652" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">DATA SCIENCE</text>
-    <text x="155" y="652" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="175" y="652" font-size="11" fill="#F8FAFC" letter-spacing="1">NUMPY &#8226; PANDAS &#8226; SCIKIT-LEARN</text>
-    <text x="175" y="672" font-size="11" fill="#F8FAFC" letter-spacing="1">MATPLOTLIB &#8226; NETWORKX &#8226; JUPYTER</text>
-
-    <!-- SYSTEM DESIGN -->
-    <text x="24" y="712" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">SYSTEM DESIGN</text>
-    <text x="165" y="712" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="185" y="712" font-size="11" fill="#F8FAFC" letter-spacing="1">MICROSERVICES &#8226; EVENT-DRIVEN SYSTEMS</text>
-    <text x="185" y="732" font-size="11" fill="#F8FAFC" letter-spacing="1">DISTRIBUTED SYSTEMS &#8226; CQRS</text>
-    <text x="185" y="752" font-size="11" fill="#F8FAFC" letter-spacing="1">MESSAGE QUEUES &#8226; REDIS STREAMS</text>
-
-    <!-- RESEARCH -->
-    <text x="24" y="792" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">RESEARCH</text>
-    <text x="115" y="792" font-size="10" fill="rgba(255,255,255,0.15)">&#8212;</text>
-    <text x="135" y="792" font-size="11" fill="#F8FAFC" letter-spacing="1">KNOWLEDGE ENGINEERING &#8226; LLM EVALUATION &#8226; REASONING &#8226; SYNTHETIC DATA</text>
-    <text x="135" y="812" font-size="11" fill="#F8FAFC" letter-spacing="1">ADAPTIVE LEARNING &#8226; PSYCHOMETRICS &#8226; BAYESIAN KNOWLEDGE TRACING</text>
-
-  </g>
+  <!-- FOOTER -->
+  <text x="32" y="510" font-size="9" fill="#7A8A9E" letter-spacing="0.14em">SELF-REPORTED · WEIGHTED BY ACTIVE USE · v2025</text>
+  <text x="888" y="510" font-size="11" fill="#00E5FF" text-anchor="end" font-weight="700">[ &#9654; ]</text>
 </svg>
