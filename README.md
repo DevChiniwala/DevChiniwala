@@ -4,11 +4,13 @@
 
 <div align="center">
 
+<a href="https://github.com/DevChiniwala">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero.svg"/>
   <img src="./assets/hero.svg" alt="Dev Chiniwala — Applied AI Engineer" width="100%"/>
 </picture>
+</a>
 
 </div>
 
@@ -18,15 +20,21 @@
 
 <div align="center">
 
-<img src="./assets/card-vygot.svg" alt="VYGOT — Cognitive Learning Intelligence Platform" width="100%"/>
+<a href="https://github.com/DevChiniwala/HeyClara">
+<img src="./assets/card-heyclara.svg" alt="HEYCLARA — Always-On AI Assistant" width="100%"/>
+</a>
 
 <br/><br/>
 
+<a href="https://github.com/DevChiniwala/AegisOS">
 <img src="./assets/card-aegisos.svg" alt="AEGISOS — AI Fraud Intelligence Platform" width="100%"/>
+</a>
 
 <br/><br/>
 
-<img src="./assets/card-pagepilot.svg" alt="PAGEPILOT — AI Browser Workspace" width="100%"/>
+<a href="https://github.com/DevChiniwala/CortexOS">
+<img src="./assets/card-cortexos.svg" alt="CORTEXOS — AI-Native Intelligence OS" width="100%"/>
+</a>
 
 </div>
 
@@ -35,11 +43,11 @@
 <div align="center">
 <table>
 <tr>
-<td align="center"><a href="https://github.com/DevChiniwala/CortexOS"><img src="./assets/mini-cortexos.svg" alt="CortexOS" width="450"/></a></td>
-<td align="center"><a href="https://github.com/DevChiniwala/HeyClara"><img src="./assets/mini-heyclara.svg" alt="HeyClara" width="450"/></a></td>
+<td align="center"><a href="https://github.com/DevChiniwala/ShopSageAI"><img src="./assets/mini-shopsage.svg" alt="ShopSageAI" width="450"/></a></td>
+<td align="center"><img src="./assets/mini-vygot.svg" alt="VYGOT" width="450"/></td>
 </tr>
 <tr>
-<td align="center" colspan="2"><a href="https://github.com/DevChiniwala/ShopSageAI"><img src="./assets/mini-shopsage.svg" alt="ShopSageAI" width="450"/></a></td>
+<td align="center" colspan="2"><a href="https://github.com/DevChiniwala/-PagePilot"><img src="./assets/mini-pagepilot.svg" alt="PagePilot" width="450"/></a></td>
 </tr>
 </table>
 </div>
@@ -49,7 +57,9 @@
 <!-- ═══════════ 02 · RESEARCH DOMAINS ═══════════ -->
 
 <div align="center">
+<a href="https://github.com/DevChiniwala?tab=repositories">
 <img src="./assets/research-domains.svg" alt="Research Domains" width="100%"/>
+</a>
 </div>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
@@ -57,7 +67,7 @@
 <!-- ═══════════ 03 · SYSTEM STACK ═══════════ -->
 
 <div align="center">
-<img src="./assets/stack.svg" alt="System Stack" width="100%"/>
+<img src="./assets/stack.svg" alt="System Stack — 52 Tools" width="100%"/>
 </div>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
@@ -65,7 +75,9 @@
 <!-- ═══════════ 04 · RESEARCH TELEMETRY ═══════════ -->
 
 <div align="center">
+<a href="https://github.com/DevChiniwala?tab=repositories">
 <img src="./assets/telemetry.svg" alt="Research Telemetry" width="100%"/>
+</a>
 </div>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>

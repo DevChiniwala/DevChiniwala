@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes flowDash { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="420" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="418" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+
+  <!-- Header strip -->
+  <rect x="1" y="1" width="918" height="40" fill="#080B10"/>
+  <line x1="1" y1="41" x2="919" y2="41" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="24" y="27" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E" letter-spacing="2">FLAGSHIP // 01</text>
+
+  <circle cx="840" cy="21" r="4" fill="#00E5FF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="852" y="25" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="1" font-weight="700">ACTIVE</text>
+
+  <!-- Project name -->
+  <text x="40" y="88" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="36" font-weight="900" fill="#F8FAFC" letter-spacing="4">HEYCLARA</text>
+  <text x="40" y="112" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="13" fill="#7A8A9E" letter-spacing="1">Always-On AI Assistant — Autonomous Background Intelligence</text>
+
+  <!-- Capabilities -->
+  <text x="40" y="150" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">CAPABILITIES</text>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">
+    <rect x="40" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="50" y="175">Background Agent</text>
+
+    <rect x="180" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="190" y="175">Task Scheduling</text>
+
+    <rect x="320" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="330" y="175">Long-Term Memory</text>
+
+    <rect x="460" y="160" width="100" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="470" y="175">Multi-Step</text>
+
+    <rect x="570" y="160" width="128" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="580" y="175">Safety Backup</text>
+
+    <rect x="40" y="190" width="90" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="50" y="205">Telegram</text>
+
+    <rect x="140" y="190" width="70" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="150" y="205">Slack</text>
+
+    <rect x="220" y="190" width="60" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="230" y="205">SMS</text>
+  </g>
+
+  <!-- Architecture -->
+  <text x="40" y="245" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">ARCHITECTURE</text>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#F8FAFC">
+    <rect x="60" y="260" width="110" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="76" y="280">Messaging</text>
+
+    <path d="M 175,276 L 215,276" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <rect x="220" y="260" width="110" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="240" y="280">Dispatcher</text>
+
+    <path d="M 335,276 L 375,276" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <rect x="380" y="260" width="120" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="398" y="280">Agent Core</text>
+
+    <path d="M 505,276 L 545,276" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <rect x="550" y="260" width="100" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="570" y="280">Memory</text>
+
+    <path d="M 655,276 L 695,276" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <rect x="700" y="260" width="120" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="720" y="280">Scheduler</text>
+  </g>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#7A8A9E">
+    <text x="82" y="313">Input</text>
+    <text x="245" y="313">Route</text>
+    <text x="408" y="313">Execute</text>
+    <text x="572" y="313">Persist</text>
+    <text x="730" y="313">Automate</text>
+  </g>
+
+  <!-- Bottom divider -->
+  <line x1="40" y1="340" x2="880" y2="340" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Tech stack -->
+  <text x="40" y="365" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">STACK</text>
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E">
+    <text x="40" y="390">TypeScript</text>
+    <circle cx="112" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="122" y="390">Node.js</text>
+    <circle cx="178" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="188" y="390">Redis</text>
+    <circle cx="226" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="236" y="390">PostgreSQL</text>
+    <circle cx="316" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="326" y="390">LangChain</text>
+    <circle cx="398" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="408" y="390">Cron</text>
+    <circle cx="438" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="448" y="390">Docker</text>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#00E5FF" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M 8,8 L 8,24"/><path d="M 8,8 L 24,8"/>
+    <path d="M 912,8 L 912,24"/><path d="M 912,8 L 896,8"/>
+    <path d="M 8,412 L 8,396"/><path d="M 8,412 L 24,412"/>
+    <path d="M 912,412 L 912,396"/><path d="M 912,412 L 896,412"/>
+  </g>
+</svg>
