@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" width="920" height="500">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes flowDash { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="500" fill="#080B10"/>
+
+  <!-- Grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="230" y1="0" x2="230" y2="500"/>
+    <line x1="460" y1="0" x2="460" y2="500"/>
+    <line x1="690" y1="0" x2="690" y2="500"/>
+    <line x1="0" y1="125" x2="920" y2="125"/>
+    <line x1="0" y1="250" x2="920" y2="250"/>
+    <line x1="0" y1="375" x2="920" y2="375"/>
+  </g>
+
+  <!-- Section header -->
+  <text x="24" y="30" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="3" font-weight="700">05 // SYSTEM ARCHITECTURE</text>
+  <line x1="24" y1="42" x2="250" y2="42" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Architecture Flow - 4 columns x 3 rows -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace">
+
+    <!-- Row 1 -->
+    <!-- User -->
+    <rect x="60" y="70" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="120" y="95" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">USER</text>
+
+    <!-- Arrow -->
+    <path d="M 185,90 L 265,90" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Frontend -->
+    <rect x="270" y="70" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="330" y="95" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">FRONTEND</text>
+
+    <!-- Arrow -->
+    <path d="M 395,90 L 475,90" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- API Gateway -->
+    <rect x="480" y="70" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="540" y="95" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">GATEWAY</text>
+
+    <!-- Arrow -->
+    <path d="M 605,90 L 685,90" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- LLM Router -->
+    <rect x="690" y="70" width="140" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="760" y="95" text-anchor="middle" font-size="11" fill="#00E5FF" font-weight="700">LLM ROUTER</text>
+
+    <!-- Vertical arrow from Router down -->
+    <path d="M 760,115 L 760,175" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Row 2 -->
+    <!-- Planner -->
+    <rect x="690" y="180" width="140" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="760" y="205" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">PLANNER</text>
+
+    <!-- Arrow left from Planner -->
+    <path d="M 685,200 L 605,200" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Memory -->
+    <rect x="480" y="180" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="540" y="205" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">MEMORY</text>
+
+    <!-- Arrow left from Memory -->
+    <path d="M 475,200 L 395,200" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Knowledge Graph -->
+    <rect x="250" y="180" width="140" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="320" y="205" text-anchor="middle" font-size="11" fill="#00E5FF" font-weight="700">KNOWLEDGE GRAPH</text>
+
+    <!-- Arrow left from KG -->
+    <path d="M 245,200 L 185,200" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Hybrid Search -->
+    <rect x="60" y="180" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="2.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="120" y="205" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">HYBRID SEARCH</text>
+
+    <!-- Vertical arrow down from Hybrid Search -->
+    <path d="M 120,225 L 120,285" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Row 3 -->
+    <!-- Vector DB -->
+    <rect x="60" y="290" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="120" y="315" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">VECTOR DB</text>
+
+    <!-- Arrow right from Vector DB -->
+    <path d="M 185,310 L 265,310" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Reasoner -->
+    <rect x="270" y="290" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="330" y="315" text-anchor="middle" font-size="11" fill="#00E5FF" font-weight="700">REASONER</text>
+
+    <!-- Arrow right from Reasoner -->
+    <path d="M 395,310 L 475,310" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Evaluation -->
+    <rect x="480" y="290" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="540" y="315" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">EVALUATION</text>
+
+    <!-- Arrow right from Evaluation -->
+    <path d="M 605,310 L 685,310" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Analytics -->
+    <rect x="690" y="290" width="120" height="40" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="4.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="750" y="315" text-anchor="middle" font-size="11" fill="#F8FAFC" font-weight="700">ANALYTICS</text>
+  </g>
+
+  <!-- Layer labels -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E" letter-spacing="1">
+    <text x="24" y="57">LAYER 01 — INTERFACE</text>
+    <text x="24" y="167">LAYER 02 — INTELLIGENCE</text>
+    <text x="24" y="277">LAYER 03 — RETRIEVAL &amp; REASONING</text>
+  </g>
+
+  <!-- Data flow legend -->
+  <g transform="translate(60, 380)">
+    <text x="0" y="0" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E" letter-spacing="1">DATA FLOW</text>
+    <line x1="0" y1="15" x2="40" y2="15" stroke="#00E5FF" stroke-width="1" stroke-dasharray="6 3" opacity="0.5"/>
+    <text x="50" y="19" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E">Request Path</text>
+
+    <rect x="200" y="5" width="12" height="12" rx="2" fill="none" stroke="#00E5FF" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="220" y="15" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E">Core Systems</text>
+
+    <rect x="360" y="5" width="12" height="12" rx="2" fill="none" stroke="#00E5FF" stroke-width="1"/>
+    <text x="380" y="15" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E">Supporting Services</text>
+  </g>
+
+  <!-- Traveling data packet -->
+  <circle r="3" fill="#7DF9FF" opacity="0.8">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M 120,90 L 330,90 L 540,90 L 760,90 L 760,200 L 540,200 L 320,200 L 120,200 L 120,310 L 330,310 L 540,310 L 750,310"/>
+  </circle>
+
+  <!-- Bottom label -->
+  <text x="460" y="470" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E" letter-spacing="1">FULL-STACK AI SYSTEM — 12 INTERCONNECTED MODULES</text>
+</svg>

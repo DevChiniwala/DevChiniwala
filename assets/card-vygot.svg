@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00B8D4" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes flowDash { to { stroke-dashoffset: 0; } }
+    @keyframes nodeGlow { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="420" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="418" fill="#10141D" stroke="#00E5FF" stroke-width="1" opacity="1"/>
+
+  <!-- Header strip -->
+  <rect x="1" y="1" width="918" height="40" fill="#080B10" stroke="none"/>
+  <line x1="1" y1="41" x2="919" y2="41" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="24" y="27" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E" letter-spacing="2">FLAGSHIP // 01</text>
+
+  <!-- Status -->
+  <circle cx="840" cy="21" r="4" fill="#00E5FF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="852" y="25" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="1" font-weight="700">ACTIVE</text>
+
+  <!-- Project name -->
+  <text x="40" y="88" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="36" font-weight="900" fill="#F8FAFC" letter-spacing="4">VYGOT</text>
+  <text x="40" y="112" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="13" fill="#7A8A9E" letter-spacing="1">Cognitive Learning Intelligence Platform</text>
+
+  <!-- Research Areas label -->
+  <text x="40" y="150" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">RESEARCH AREAS</text>
+
+  <!-- Research tags -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">
+    <rect x="40" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="50" y="175">Knowledge Tracing</text>
+
+    <rect x="180" y="160" width="108" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="190" y="175">Psychometrics</text>
+
+    <rect x="298" y="160" width="152" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="308" y="175">Learning Fingerprints</text>
+
+    <rect x="460" y="160" width="136" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="470" y="175">Adaptive Learning</text>
+
+    <rect x="606" y="160" width="128" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="616" y="175">Bayesian Models</text>
+  </g>
+
+  <!-- Architecture section -->
+  <text x="40" y="220" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">ARCHITECTURE</text>
+
+  <!-- Architecture nodes -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#F8FAFC">
+    <!-- FastAPI -->
+    <rect x="60" y="240" width="90" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="80" y="260" fill="#F8FAFC">FastAPI</text>
+
+    <!-- Arrow -->
+    <path d="M 155,256 L 195,256" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Postgres -->
+    <rect x="200" y="240" width="100" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="215" y="260" fill="#F8FAFC">Postgres</text>
+
+    <!-- Arrow -->
+    <path d="M 305,256 L 345,256" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Knowledge Graph -->
+    <rect x="350" y="240" width="140" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="365" y="260" fill="#F8FAFC">Knowledge Graph</text>
+
+    <!-- Arrow -->
+    <path d="M 495,256 L 535,256" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- LLMs -->
+    <rect x="540" y="240" width="70" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="558" y="260" fill="#F8FAFC">LLMs</text>
+
+    <!-- Arrow -->
+    <path d="M 615,256 L 655,256" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Gemini -->
+    <rect x="660" y="240" width="80" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="678" y="260" fill="#F8FAFC">Gemini</text>
+
+    <!-- Arrow -->
+    <path d="M 745,256 L 785,256" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- React -->
+    <rect x="790" y="240" width="80" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="812" y="260" fill="#F8FAFC">React</text>
+  </g>
+
+  <!-- Second row of architecture - data flow -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#7A8A9E">
+    <text x="80" y="295">API Layer</text>
+    <text x="218" y="295">Storage</text>
+    <text x="380" y="295">Reasoning</text>
+    <text x="552" y="295">Generation</text>
+    <text x="672" y="295">Models</text>
+    <text x="808" y="295">Frontend</text>
+  </g>
+
+  <!-- Bottom section divider -->
+  <line x1="40" y1="320" x2="880" y2="320" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Tech stack bottom -->
+  <text x="40" y="350" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">STACK</text>
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E">
+    <text x="40" y="375">Python</text>
+    <circle cx="90" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="100" y="375">FastAPI</text>
+    <circle cx="158" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="168" y="375">PostgreSQL</text>
+    <circle cx="247" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="257" y="375">Neo4j</text>
+    <circle cx="297" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="307" y="375">LangChain</text>
+    <circle cx="380" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="390" y="375">Gemini</text>
+    <circle cx="438" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="448" y="375">React</text>
+    <circle cx="490" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="500" y="375">TypeScript</text>
+    <circle cx="575" cy="371" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="585" y="375">Docker</text>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#00E5FF" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M 8,8 L 8,24"/>
+    <path d="M 8,8 L 24,8"/>
+    <path d="M 912,8 L 912,24"/>
+    <path d="M 912,8 L 896,8"/>
+    <path d="M 8,412 L 8,396"/>
+    <path d="M 8,412 L 24,412"/>
+    <path d="M 912,412 L 912,396"/>
+    <path d="M 912,412 L 896,412"/>
+  </g>
+</svg>

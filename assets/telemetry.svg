@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 200" width="920" height="200">
+  <style>
+    @keyframes barGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes numPulse { 0%,100% { opacity: 0.8; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="200" fill="#080B10"/>
+
+  <!-- Section header -->
+  <text x="24" y="30" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="3" font-weight="700">04 // RESEARCH TELEMETRY</text>
+  <line x1="24" y1="42" x2="240" y2="42" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Metrics grid - 6 columns -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace">
+
+    <!-- Repositories -->
+    <g transform="translate(60, 60)">
+      <rect x="0" y="80" width="40" height="60" fill="#10141D" rx="2"/>
+      <rect x="0" y="80" width="40" height="60" fill="#00E5FF" opacity="0.15" rx="2" transform-origin="20px 110px" style="animation: barGrow 2s ease-out forwards;"/>
+      <rect x="0" y="80" width="40" height="60" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="70" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out infinite;">27</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">REPOS</text>
+    </g>
+
+    <!-- Commits -->
+    <g transform="translate(180, 60)">
+      <rect x="0" y="40" width="40" height="100" fill="#10141D" rx="2"/>
+      <rect x="0" y="40" width="40" height="100" fill="#00E5FF" opacity="0.2" rx="2" transform-origin="20px 90px" style="animation: barGrow 2.2s ease-out forwards;"/>
+      <rect x="0" y="40" width="40" height="100" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="30" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 0.3s infinite;">911</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">COMMITS</text>
+    </g>
+
+    <!-- Stars -->
+    <g transform="translate(300, 60)">
+      <rect x="0" y="105" width="40" height="35" fill="#10141D" rx="2"/>
+      <rect x="0" y="105" width="40" height="35" fill="#00E5FF" opacity="0.12" rx="2" transform-origin="20px 122px" style="animation: barGrow 1.8s ease-out forwards;"/>
+      <rect x="0" y="105" width="40" height="35" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="95" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 0.6s infinite;">15</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">STARS</text>
+    </g>
+
+    <!-- Experiments -->
+    <g transform="translate(420, 60)">
+      <rect x="0" y="70" width="40" height="70" fill="#10141D" rx="2"/>
+      <rect x="0" y="70" width="40" height="70" fill="#00E5FF" opacity="0.15" rx="2" transform-origin="20px 105px" style="animation: barGrow 2.4s ease-out forwards;"/>
+      <rect x="0" y="70" width="40" height="70" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="60" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 0.9s infinite;">50+</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">EXPERIMENTS</text>
+    </g>
+
+    <!-- Models -->
+    <g transform="translate(560, 60)">
+      <rect x="0" y="90" width="40" height="50" fill="#10141D" rx="2"/>
+      <rect x="0" y="90" width="40" height="50" fill="#00E5FF" opacity="0.12" rx="2" transform-origin="20px 115px" style="animation: barGrow 2s ease-out forwards;"/>
+      <rect x="0" y="90" width="40" height="50" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="80" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 1.2s infinite;">15+</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">MODELS</text>
+    </g>
+
+    <!-- Research Hours -->
+    <g transform="translate(680, 60)">
+      <rect x="0" y="30" width="50" height="110" fill="#10141D" rx="2"/>
+      <rect x="0" y="30" width="50" height="110" fill="#00E5FF" opacity="0.22" rx="2" transform-origin="25px 85px" style="animation: barGrow 2.6s ease-out forwards;"/>
+      <rect x="0" y="30" width="50" height="110" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="25" y="22" text-anchor="middle" font-size="18" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 1.5s infinite;">2000+</text>
+      <text x="25" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">HOURS</text>
+    </g>
+
+    <!-- Pull Requests -->
+    <g transform="translate(810, 60)">
+      <rect x="0" y="115" width="40" height="25" fill="#10141D" rx="2"/>
+      <rect x="0" y="115" width="40" height="25" fill="#00E5FF" opacity="0.1" rx="2" transform-origin="20px 127px" style="animation: barGrow 1.6s ease-out forwards;"/>
+      <rect x="0" y="115" width="40" height="25" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" rx="2"/>
+      <text x="20" y="105" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC" style="animation: numPulse 3s ease-in-out 1.8s infinite;">4</text>
+      <text x="20" y="156" text-anchor="middle" font-size="9" fill="#7A8A9E" letter-spacing="1">PRs</text>
+    </g>
+  </g>
+</svg>

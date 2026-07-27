@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="920" height="250">
+  <style>
+    @keyframes borderBreathe { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="250" fill="#080B10"/>
+
+  <!-- Section header -->
+  <text x="24" y="30" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="3" font-weight="700">08 // ENGINEERING PHILOSOPHY</text>
+  <line x1="24" y1="42" x2="260" y2="42" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Quote border -->
+  <rect x="58" y="60" width="3" height="140" fill="#00E5FF" style="animation: borderBreathe 4s ease-in-out infinite;"/>
+
+  <!-- Quote text -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="13" fill="#F8FAFC" letter-spacing="0.5">
+    <text x="82" y="88">"I build systems that don't just generate text.</text>
+    <text x="82" y="112" fill="#00E5FF">They retrieve knowledge.</text>
+    <text x="82" y="136" fill="#00E5FF">Reason over evidence.</text>
+    <text x="82" y="160" fill="#00E5FF">Learn continuously.</text>
+    <text x="82" y="184" fill="#00E5FF">Scale reliably.</text>
+    <text x="82" y="208" fill="#F8FAFC">Explain every decision."</text>
+  </g>
+
+  <!-- Attribution -->
+  <text x="82" y="238" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#7A8A9E" letter-spacing="1">— Dev Chiniwala // Engineering Principles</text>
+</svg>

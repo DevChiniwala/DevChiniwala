@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280">
+  <defs>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes scanMove { 0% { transform: translateY(-60px); } 100% { transform: translateY(280px); } }
+    @keyframes breathe { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+    @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    @keyframes accentPulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="1280" height="280" fill="#080B10"/>
+
+  <!-- Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="0.5">
+    <line x1="160" y1="0" x2="160" y2="280"/>
+    <line x1="320" y1="0" x2="320" y2="280"/>
+    <line x1="480" y1="0" x2="480" y2="280"/>
+    <line x1="640" y1="0" x2="640" y2="280"/>
+    <line x1="800" y1="0" x2="800" y2="280"/>
+    <line x1="960" y1="0" x2="960" y2="280"/>
+    <line x1="1120" y1="0" x2="1120" y2="280"/>
+    <line x1="0" y1="70" x2="1280" y2="70"/>
+    <line x1="0" y1="140" x2="1280" y2="140"/>
+    <line x1="0" y1="210" x2="1280" y2="210"/>
+  </g>
+
+  <!-- Scanline -->
+  <rect x="0" y="0" width="1280" height="60" fill="url(#scanGrad)" style="animation: scanMove 6s linear infinite;"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#00E5FF" stroke-width="1.5" opacity="0.5" fill="none">
+    <path d="M 20,20 L 20,44"/>
+    <path d="M 20,20 L 44,20"/>
+    <path d="M 1260,20 L 1260,44"/>
+    <path d="M 1260,20 L 1236,20"/>
+    <path d="M 20,260 L 20,236"/>
+    <path d="M 20,260 L 44,260"/>
+    <path d="M 1260,260 L 1260,236"/>
+    <path d="M 1260,260 L 1236,260"/>
+  </g>
+
+  <!-- Top left system label -->
+  <text x="56" y="34" font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="10" fill="#7A8A9E" letter-spacing="2">SYSTEM v3.0 // AI RESEARCH OS</text>
+
+  <!-- Top right LIVE indicator -->
+  <circle cx="1180" cy="30" r="4" fill="#00E5FF" style="animation: breathe 2s ease-in-out infinite;">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1192" y="34" font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">ACTIVE</text>
+
+  <!-- Main name -->
+  <text x="640" y="118" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="52" font-weight="900" fill="#F8FAFC" letter-spacing="8" filter="url(#textGlow)">DEV CHINIWALA</text>
+
+  <!-- Accent underline -->
+  <rect x="480" y="130" width="320" height="2" fill="url(#accentLine)" style="animation: accentPulse 3s ease-in-out infinite;">
+    <animate attributeName="width" values="280;340;280" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="500;470;500" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <text x="640" y="156" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="13" fill="#7A8A9E" letter-spacing="3">APPLIED AI ENGINEER  ·  RESEARCH SYSTEMS ENGINEER</text>
+
+  <!-- Tag boxes -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="10" letter-spacing="1">
+    <!-- LLMs -->
+    <rect x="355" y="175" width="56" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="383" y="191" text-anchor="middle" fill="#00E5FF" font-size="10">LLMs</text>
+
+    <!-- RAG -->
+    <rect x="423" y="175" width="50" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="448" y="191" text-anchor="middle" fill="#00E5FF" font-size="10">RAG</text>
+
+    <!-- Agents -->
+    <rect x="485" y="175" width="68" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="519" y="191" text-anchor="middle" fill="#00E5FF" font-size="10">AGENTS</text>
+
+    <!-- Knowledge Engineering -->
+    <rect x="565" y="175" width="170" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="650" y="191" text-anchor="middle" fill="#00E5FF" font-size="10">KNOWLEDGE ENGINEERING</text>
+
+    <!-- Cognitive Intelligence -->
+    <rect x="747" y="175" width="178" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="836" y="191" text-anchor="middle" fill="#00E5FF" font-size="10">COGNITIVE INTELLIGENCE</text>
+  </g>
+
+  <!-- Mission tagline -->
+  <text x="640" y="235" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace" font-size="11" fill="#7A8A9E" letter-spacing="1" font-style="italic">Building intelligent systems that retrieve, reason, learn and scale.</text>
+
+  <!-- Blinking cursor -->
+  <rect x="885" y="227" width="8" height="14" fill="#00E5FF" opacity="0.8" style="animation: blink 1.2s step-end infinite;"/>
+
+  <!-- Bottom accent line -->
+  <line x1="0" y1="279" x2="1280" y2="279" stroke="#00E5FF" stroke-width="1" opacity="0.15"/>
+</svg>

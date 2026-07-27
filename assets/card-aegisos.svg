@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes flowDash { to { stroke-dashoffset: 0; } }
+    @keyframes nodeGlow { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="420" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="418" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+
+  <!-- Header strip -->
+  <rect x="1" y="1" width="918" height="40" fill="#080B10"/>
+  <line x1="1" y1="41" x2="919" y2="41" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="24" y="27" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E" letter-spacing="2">FLAGSHIP // 02</text>
+
+  <circle cx="840" cy="21" r="4" fill="#00E5FF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="852" y="25" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="1" font-weight="700">ACTIVE</text>
+
+  <!-- Project name -->
+  <text x="40" y="88" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="36" font-weight="900" fill="#F8FAFC" letter-spacing="4">AEGISOS</text>
+  <text x="40" y="112" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="13" fill="#7A8A9E" letter-spacing="1">AI Fraud Intelligence Operating System</text>
+
+  <!-- Capabilities -->
+  <text x="40" y="150" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">CAPABILITIES</text>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">
+    <rect x="40" y="160" width="150" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="50" y="175">Streaming Analytics</text>
+
+    <rect x="200" y="160" width="138" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="210" y="175">Graph Intelligence</text>
+
+    <rect x="348" y="160" width="50" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="358" y="175">RAG</text>
+
+    <rect x="408" y="160" width="100" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="418" y="175">Risk Engine</text>
+
+    <rect x="518" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="528" y="175">Entity Resolution</text>
+
+    <rect x="658" y="160" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="668" y="175">Knowledge Graph</text>
+
+    <rect x="40" y="190" width="130" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="50" y="205">Temporal Analysis</text>
+
+    <rect x="180" y="190" width="120" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="190" y="205">Explainable AI</text>
+
+    <rect x="310" y="190" width="100" height="22" rx="2" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="320" y="205">Behavioral</text>
+  </g>
+
+  <!-- Architecture -->
+  <text x="40" y="250" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">ARCHITECTURE</text>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#F8FAFC">
+    <!-- Event Stream -->
+    <rect x="60" y="265" width="110" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="75" y="285">Event Stream</text>
+
+    <path d="M 175,281 L 215,281" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Graph DB -->
+    <rect x="220" y="265" width="90" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="237" y="285">Graph DB</text>
+
+    <path d="M 315,281 L 355,281" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- GNN Engine -->
+    <rect x="360" y="265" width="110" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="378" y="285">GNN Engine</text>
+
+    <path d="M 475,281 L 515,281" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Risk Scorer -->
+    <rect x="520" y="265" width="110" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="535" y="285">Risk Scorer</text>
+
+    <path d="M 635,281 L 675,281" stroke="#00E5FF" stroke-width="1" fill="none" stroke-dasharray="6 3" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="18" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Alert System -->
+    <rect x="680" y="265" width="120" height="32" rx="2" fill="#080B10" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="698" y="285">Alert System</text>
+  </g>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#7A8A9E">
+    <text x="80" y="318">Ingest</text>
+    <text x="238" y="318">Model</text>
+    <text x="385" y="318">Reason</text>
+    <text x="548" y="318">Score</text>
+    <text x="715" y="318">Action</text>
+  </g>
+
+  <!-- Bottom divider -->
+  <line x1="40" y1="340" x2="880" y2="340" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Tech stack -->
+  <text x="40" y="365" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">STACK</text>
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#7A8A9E">
+    <text x="40" y="390">Python</text>
+    <circle cx="90" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="100" y="390">LangGraph</text>
+    <circle cx="172" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="182" y="390">Neo4j</text>
+    <circle cx="222" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="232" y="390">Temporal</text>
+    <circle cx="296" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="306" y="390">PyTorch</text>
+    <circle cx="362" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="372" y="390">Kafka</text>
+    <circle cx="412" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="422" y="390">FastAPI</text>
+    <circle cx="478" cy="386" r="2" fill="#00E5FF" opacity="0.5"/>
+    <text x="488" y="390">Docker</text>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#00E5FF" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M 8,8 L 8,24"/><path d="M 8,8 L 24,8"/>
+    <path d="M 912,8 L 912,24"/><path d="M 912,8 L 896,8"/>
+    <path d="M 8,412 L 8,396"/><path d="M 8,412 L 24,412"/>
+    <path d="M 912,412 L 912,396"/><path d="M 912,412 L 896,412"/>
+  </g>
+</svg>

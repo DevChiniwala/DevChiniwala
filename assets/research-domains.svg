@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes nodeP1 { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
+    @keyframes nodeP2 { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
+    @keyframes flowLine { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="480" fill="#080B10"/>
+
+  <!-- Grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="80" x2="920" y2="80"/>
+    <line x1="0" y1="160" x2="920" y2="160"/>
+    <line x1="0" y1="240" x2="920" y2="240"/>
+    <line x1="0" y1="320" x2="920" y2="320"/>
+    <line x1="0" y1="400" x2="920" y2="400"/>
+    <line x1="184" y1="0" x2="184" y2="480"/>
+    <line x1="368" y1="0" x2="368" y2="480"/>
+    <line x1="552" y1="0" x2="552" y2="480"/>
+    <line x1="736" y1="0" x2="736" y2="480"/>
+  </g>
+
+  <!-- Section header -->
+  <text x="24" y="30" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="3" font-weight="700">02 // RESEARCH DOMAINS</text>
+  <line x1="24" y1="42" x2="250" y2="42" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Central node -->
+  <rect x="370" y="55" width="180" height="30" rx="2" fill="#10141D" stroke="#00E5FF" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="460" y="75" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="11" fill="#00E5FF" font-weight="700" letter-spacing="1">RESEARCH MAP</text>
+
+  <!-- Connection lines from center -->
+  <g stroke="#00E5FF" stroke-width="0.8" fill="none" stroke-dasharray="4 3" opacity="0.3">
+    <path d="M 460,85 L 160,120">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 460,85 L 460,120">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 460,85 L 760,120">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- CLUSTER 1: LLM & Retrieval (top-left) -->
+  <g style="animation: nodeP1 4s ease-in-out infinite;">
+    <text x="60" y="120" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#00E5FF" letter-spacing="2" font-weight="700">LLM &amp; RETRIEVAL</text>
+
+    <rect x="40" y="130" width="120" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="147" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Large Language Models</text>
+
+    <rect x="40" y="162" width="200" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="179" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Retrieval-Augmented Generation</text>
+
+    <rect x="40" y="194" width="100" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="211" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">GraphRAG</text>
+
+    <rect x="40" y="226" width="130" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="243" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Hybrid Search</text>
+  </g>
+
+  <!-- CLUSTER 2: Knowledge & Agents (top-center) -->
+  <g style="animation: nodeP1 4s ease-in-out 0.5s infinite;">
+    <text x="370" y="120" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#00E5FF" letter-spacing="2" font-weight="700">KNOWLEDGE &amp; AGENTS</text>
+
+    <rect x="350" y="130" width="140" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="366" y="147" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Knowledge Graphs</text>
+
+    <rect x="350" y="162" width="110" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="366" y="179" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Agentic AI</text>
+
+    <rect x="350" y="194" width="140" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="366" y="211" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Memory Systems</text>
+
+    <rect x="350" y="226" width="120" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="366" y="243" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Long Context</text>
+  </g>
+
+  <!-- CLUSTER 3: Reasoning & Evaluation (top-right) -->
+  <g style="animation: nodeP1 4s ease-in-out 1s infinite;">
+    <text x="670" y="120" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#00E5FF" letter-spacing="2" font-weight="700">REASONING</text>
+
+    <rect x="650" y="130" width="170" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="147" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Context Engineering</text>
+
+    <rect x="650" y="162" width="110" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="179" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Reasoning</text>
+
+    <rect x="650" y="194" width="110" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="211" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Evaluation</text>
+
+    <rect x="650" y="226" width="160" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="243" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Prompt Engineering</text>
+  </g>
+
+  <!-- Inter-cluster connections (horizontal) -->
+  <g stroke="#00E5FF" stroke-width="0.5" fill="none" stroke-dasharray="3 4" opacity="0.2">
+    <path d="M 250,175 L 345,175">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 500,175 L 645,175">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="40" y1="275" x2="880" y2="275" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- CLUSTER 4: Engineering (bottom-left) -->
+  <g>
+    <text x="60" y="300" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#00E5FF" letter-spacing="2" font-weight="700">ENGINEERING</text>
+
+    <rect x="40" y="310" width="130" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="327" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Model Routing</text>
+
+    <rect x="40" y="342" width="130" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="359" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Synthetic Data</text>
+
+    <rect x="40" y="374" width="140" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="56" y="391" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Explainable AI</text>
+  </g>
+
+  <!-- CLUSTER 5: Learning Science (bottom-right) -->
+  <g>
+    <text x="540" y="300" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#00E5FF" letter-spacing="2" font-weight="700">LEARNING SCIENCE</text>
+
+    <rect x="520" y="310" width="150" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="536" y="327" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Learning Analytics</text>
+
+    <rect x="520" y="342" width="130" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="536" y="359" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Psychometrics</text>
+
+    <rect x="520" y="374" width="160" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="536" y="391" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Adaptive Learning</text>
+
+    <rect x="520" y="406" width="210" height="26" rx="2" fill="#10141D" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="536" y="423" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#F8FAFC">Bayesian Knowledge Tracing</text>
+  </g>
+
+  <!-- Bottom connection lines -->
+  <g stroke="#00E5FF" stroke-width="0.5" fill="none" stroke-dasharray="3 4" opacity="0.2">
+    <path d="M 185,360 L 515,360">
+      <animate attributeName="stroke-dashoffset" from="14" to="0" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Node count indicator -->
+  <text x="820" y="460" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="9" fill="#7A8A9E" text-anchor="end">19 ACTIVE DOMAINS</text>
+</svg>

@@ -1,29 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 8" width="900" height="8">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 8" width="920" height="8">
   <defs>
-    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0">
-        <animate attributeName="stop-color" values="#a855f7;#6366f1;#ec4899;#a855f7" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="30%" style="stop-color:#a855f7;stop-opacity:0.6">
-        <animate attributeName="stop-color" values="#a855f7;#6366f1;#ec4899;#a855f7" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.8">
-        <animate attributeName="stop-color" values="#6366f1;#ec4899;#a855f7;#6366f1" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="70%" style="stop-color:#ec4899;stop-opacity:0.6">
-        <animate attributeName="stop-color" values="#ec4899;#a855f7;#6366f1;#ec4899" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0">
-        <animate attributeName="stop-color" values="#ec4899;#a855f7;#6366f1;#ec4899" dur="4s" repeatCount="indefinite"/>
-      </stop>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="900" height="8" fill="transparent"/>
-  <line x1="100" y1="4" x2="800" y2="4" stroke="url(#dividerGrad)" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Center diamond -->
-  <g transform="translate(450, 4)">
-    <rect x="-3" y="-3" width="6" height="6" fill="#6366f1" transform="rotate(45)" opacity="0.6">
-      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <rect width="920" height="8" fill="transparent"/>
+  <line x1="0" y1="4" x2="920" y2="4" stroke="url(#divGrad)" stroke-width="1"/>
+  <circle cx="460" cy="4" r="2" fill="#00E5FF" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
 </svg>

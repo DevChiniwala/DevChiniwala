@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" width="920" height="620">
+  <style>
+    @keyframes rowFade { 0%,100% { opacity: 0.7; } 50% { opacity: 1; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="920" height="620" fill="#080B10"/>
+
+  <!-- Section header -->
+  <text x="24" y="30" font-family="'JetBrains Mono','Fira Code','SF Mono',monospace" font-size="10" fill="#00E5FF" letter-spacing="3" font-weight="700">03 // SYSTEM STACK</text>
+  <line x1="24" y1="42" x2="200" y2="42" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Row template: LABEL ── items separated by dots -->
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono',monospace">
+
+    <!-- LANGUAGES -->
+    <text x="24" y="75" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">LANGUAGES</text>
+    <line x1="120" y1="72" x2="880" y2="72" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 0s infinite;">
+      <text x="24" y="100">Python</text>
+      <circle cx="82" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="92" y="100">TypeScript</text>
+      <circle cx="172" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="182" y="100">JavaScript</text>
+      <circle cx="262" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="272" y="100">Java</text>
+      <circle cx="310" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="320" y="100">SQL</text>
+      <circle cx="350" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="360" y="100">C++</text>
+      <circle cx="390" cy="96" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="400" y="100">Go</text>
+    </g>
+
+    <!-- FRONTEND -->
+    <text x="24" y="138" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">FRONTEND</text>
+    <line x1="110" y1="135" x2="880" y2="135" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 0.4s infinite;">
+      <text x="24" y="163">React</text>
+      <circle cx="70" cy="159" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="80" y="163">Next.js</text>
+      <circle cx="136" cy="159" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="146" y="163">TailwindCSS</text>
+      <circle cx="236" cy="159" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="246" y="163">Framer Motion</text>
+      <circle cx="352" cy="159" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="362" y="163">Vite</text>
+    </g>
+
+    <!-- BACKEND -->
+    <text x="24" y="201" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">BACKEND</text>
+    <line x1="100" y1="198" x2="880" y2="198" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 0.8s infinite;">
+      <text x="24" y="226">FastAPI</text>
+      <circle cx="84" cy="222" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="94" y="226">Node.js</text>
+      <circle cx="154" cy="222" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="164" y="226">Express</text>
+      <circle cx="222" cy="222" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="232" y="226">Spring Boot</text>
+      <circle cx="318" cy="222" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="328" y="226">GraphQL</text>
+    </g>
+
+    <!-- AI / ML -->
+    <text x="24" y="264" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">AI / ML</text>
+    <line x1="85" y1="261" x2="880" y2="261" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 1.2s infinite;">
+      <text x="24" y="289">LangChain</text>
+      <circle cx="104" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="114" y="289">LangGraph</text>
+      <circle cx="194" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="204" y="289">LlamaIndex</text>
+      <circle cx="288" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="298" y="289">DSPy</text>
+      <circle cx="336" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="346" y="289">CrewAI</text>
+      <circle cx="398" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="408" y="289">AutoGen</text>
+      <circle cx="468" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="478" y="289">PyTorch</text>
+      <circle cx="536" cy="285" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="546" y="289">Transformers</text>
+    </g>
+
+    <!-- MODELS -->
+    <text x="24" y="327" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">MODELS</text>
+    <line x1="95" y1="324" x2="880" y2="324" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 1.6s infinite;">
+      <text x="24" y="352">OpenAI</text>
+      <circle cx="80" cy="348" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="90" y="352">Claude</text>
+      <circle cx="140" cy="348" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="150" y="352">Gemini</text>
+      <circle cx="204" cy="348" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="214" y="352">Ollama</text>
+      <circle cx="266" cy="348" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="276" y="352">vLLM</text>
+      <circle cx="316" cy="348" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="326" y="352">OpenRouter</text>
+    </g>
+
+    <!-- VECTOR -->
+    <text x="24" y="390" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">VECTOR</text>
+    <line x1="95" y1="387" x2="880" y2="387" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 2s infinite;">
+      <text x="24" y="415">Pinecone</text>
+      <circle cx="92" cy="411" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="102" y="415">Qdrant</text>
+      <circle cx="154" cy="411" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="164" y="415">Chroma</text>
+      <circle cx="218" cy="411" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="228" y="415">Weaviate</text>
+      <circle cx="296" cy="411" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="306" y="415">Milvus</text>
+      <circle cx="354" cy="411" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="364" y="415">FAISS</text>
+    </g>
+
+    <!-- DATABASES -->
+    <text x="24" y="453" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">DATABASES</text>
+    <line x1="120" y1="450" x2="880" y2="450" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 2.4s infinite;">
+      <text x="24" y="478">PostgreSQL</text>
+      <circle cx="108" cy="474" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="118" y="478">MongoDB</text>
+      <circle cx="184" cy="474" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="194" y="478">Redis</text>
+      <circle cx="234" cy="474" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="244" y="478">Neo4j</text>
+      <circle cx="286" cy="474" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="296" y="478">Supabase</text>
+      <circle cx="366" cy="474" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="376" y="478">SQLite</text>
+    </g>
+
+    <!-- INFRASTRUCTURE -->
+    <text x="24" y="516" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">INFRA</text>
+    <line x1="75" y1="513" x2="880" y2="513" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 2.8s infinite;">
+      <text x="24" y="541">Docker</text>
+      <circle cx="78" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="88" y="541">Kubernetes</text>
+      <circle cx="172" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="182" y="541">AWS</text>
+      <circle cx="212" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="222" y="541">GCP</text>
+      <circle cx="252" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="262" y="541">Terraform</text>
+      <circle cx="332" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="342" y="541">GitHub Actions</text>
+      <circle cx="448" cy="537" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="458" y="541">Vercel</text>
+    </g>
+
+    <!-- MONITORING -->
+    <text x="24" y="579" font-size="10" fill="#00E5FF" letter-spacing="2" font-weight="700">MONITORING</text>
+    <line x1="130" y1="576" x2="880" y2="576" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <g font-size="12" fill="#F8FAFC" style="animation: rowFade 6s ease-in-out 3.2s infinite;">
+      <text x="24" y="604">Grafana</text>
+      <circle cx="82" cy="600" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="92" y="604">Prometheus</text>
+      <circle cx="176" cy="600" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="186" y="604">OpenTelemetry</text>
+      <circle cx="296" cy="600" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="306" y="604">Sentry</text>
+      <circle cx="352" cy="600" r="2" fill="#00E5FF" opacity="0.4"/>
+      <text x="362" y="604">LangSmith</text>
+    </g>
+  </g>
+</svg>

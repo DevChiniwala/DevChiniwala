@@ -18,7 +18,9 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: DevChiniwala
-          outputs: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00E5FF&color_dots=#080B10,#0a2a2f,#00666b,#00B8D4,#00E5FF
 
       - name: Push to output branch
         uses: peaceiris/actions-gh-pages@v3
