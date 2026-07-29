@@ -164,7 +164,7 @@
 <br/><br/>
 
 <a href="https://github.com/DevChiniwala">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DevChiniwala&bg_color=080B10&color=00E5FF&line=00B8D4&point=7DF9FF&area_color=00E5FF&area=true&hide_border=true&custom_title=Contribution%20Timeline" width="95%" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DevChiniwala&bg_color=080B10&color=00E5FF&line=00B8D4&point=7DF9FF&area_color=00E5FF&area=true&hide_border=true&custom_title=Contribution%20Timeline&v=2" width="95%" alt="Activity Graph"/>
 </a>
 
 </div>
