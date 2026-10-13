@@ -1,6 +1,6 @@
 <!--
   DevChiniwala / DevChiniwala
-  AI systems portfolio · cyan on near-black
+  Applied AI systems portfolio · cyan on near-black
 -->
 
 <div align="center">
@@ -9,74 +9,53 @@
   <img src="./assets/hero-v2.svg" alt="Dev Chiniwala — Applied AI Engineer and AI Systems Builder" width="100%"/>
 </a>
 
-<br/>
-
-<a href="https://www.linkedin.com/in/dev-chiniwala/"><code>LinkedIn</code></a>&nbsp;·&nbsp;<a href="https://x.com/DevChiniwala"><code>X / Twitter</code></a>&nbsp;·&nbsp;<a href="mailto:dev.chiniwala@gmail.com"><code>Email</code></a>&nbsp;·&nbsp;<a href="https://github.com/DevChiniwala?tab=repositories"><code>Repositories</code></a>
+<p>
+  <a href="https://www.linkedin.com/in/dev-chiniwala/"><code>LinkedIn</code></a>
+  · <a href="https://x.com/DevChiniwala"><code>X / Twitter</code></a>
+  · <a href="mailto:dev.chiniwala@gmail.com"><code>Email</code></a>
+  · <a href="https://github.com/DevChiniwala?tab=repositories"><code>Repositories</code></a>
+</p>
 
 </div>
+
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
 ## 01 / Flagship systems
 
-I build across three connected engineering problems: operating AI agents in production, preserving knowledge as facts change, and grounding automated decisions in evidence.
+Three public systems showing how I approach production AI: instrument the runtime, preserve changing state, and verify generated intelligence.
 
-### 01 — ControlSurface / Agent reliability
-
-`RELEASE CANDIDATE` `APACHE-2.0` `SELF-HOSTED`
+### 01 — ControlSurface / Agent production engineering
 
 <a href="https://github.com/DevChiniwala/ControlSurface">
-  <img src="./assets/card-controlsurface.svg" alt="ControlSurface — production engineering and reliability for AI agents" width="100%"/>
+  <img src="./assets/card-controlsurface.svg" alt="ControlSurface — agent observability, failure intelligence, regression evidence, and release gates" width="100%"/>
 </a>
 
-**Production failures should become reusable engineering evidence.**
+**Production failures should become reusable engineering evidence.** ControlSurface derives agent execution structure from traces, turns recurring failures into reviewed regression cases, and attaches deterministic evidence to release decisions.
 
-- **Agent-aware observability:** AgentRunGraph derives agent, model, tool, retrieval, retry, branch, and outcome structure from source traces.
-- **Failure intelligence:** recurring failures become representative, editable, human-reviewed regression cases.
-- **Release decisions:** versioned change records and content-hashed evaluation evidence support deterministic release gates.
-
-[Repository](https://github.com/DevChiniwala/ControlSurface) · [Architecture](https://github.com/DevChiniwala/ControlSurface/blob/main/ARCHITECTURE.md) · [v0.1.0-rc.1](https://github.com/DevChiniwala/ControlSurface/releases/tag/v0.1.0-rc.1)
-
-`Python` `OpenTelemetry` `PostgreSQL` `ClickHouse` `Next.js` `Docker Compose`
-
-<br/>
+[Repository](https://github.com/DevChiniwala/ControlSurface) · [Architecture](https://github.com/DevChiniwala/ControlSurface/blob/main/ARCHITECTURE.md) · [v0.1.0-rc.1](https://github.com/DevChiniwala/ControlSurface/releases/tag/v0.1.0-rc.1)<br/>
+<code>Python</code> <code>OpenTelemetry</code> <code>PostgreSQL</code> <code>ClickHouse</code> <code>Next.js</code> <code>Docker Compose</code>
 
 ### 02 — MNEMOS / Temporal memory
 
-`BETA` `RESEARCH` `MIT`
-
 <a href="https://github.com/DevChiniwala/MNEMOS">
-  <img src="./assets/card-mnemos.svg" alt="MNEMOS — self-editing bi-temporal memory for AI agents" width="100%"/>
+  <img src="./assets/card-mnemos.svg" alt="MNEMOS — self-editing bi-temporal memory with six-signal retrieval" width="100%"/>
 </a>
 
-**Agent memory should know when a fact was true, when it changed, and where it came from.**
+**Memory should preserve both change and provenance.** MNEMOS resolves new facts through explicit lifecycle operations, combines six retrieval signals, and keeps context bounded through consolidation, decay, and token-aware packing.
 
-- **Self-editing state:** incoming facts resolve through `ADD`, `UPDATE`, `DELETE`, or `NOOP` while preserving version history.
-- **Six-signal retrieval:** sparse, dense, graph, temporal, cognitive, and consolidation signals are combined for robust recall.
-- **Bounded context:** token-aware packing, deduplication, graph provenance, decay, and sleep consolidation keep memory useful over time.
-
-[Repository](https://github.com/DevChiniwala/MNEMOS) · [Package metadata](https://github.com/DevChiniwala/MNEMOS/blob/main/pyproject.toml) · [Documentation](https://github.com/DevChiniwala/MNEMOS/tree/main/docs)
-
-`Python` `MCP` `FastAPI` `Neo4j` `FAISS` `RAGAS`
-
-<br/>
+[Repository](https://github.com/DevChiniwala/MNEMOS) · [Package metadata](https://github.com/DevChiniwala/MNEMOS/blob/main/pyproject.toml) · [Documentation](https://github.com/DevChiniwala/MNEMOS/tree/main/docs)<br/>
+<code>Python</code> <code>MCP</code> <code>FastAPI</code> <code>Neo4j</code> <code>FAISS</code> <code>RAGAS</code>
 
 ### 03 — CortexOS / Verified intelligence
 
-`PUBLIC APPLICATION` `APACHE-2.0` `LOCAL-FIRST`
-
 <a href="https://github.com/DevChiniwala/CortexOS">
-  <img src="./assets/card-cortexos-v2.svg" alt="CortexOS — evidence-backed company intelligence workflows" width="100%"/>
+  <img src="./assets/card-cortexos-v2.svg" alt="CortexOS — multi-agent company research with deterministic source verification" width="100%"/>
 </a>
 
-**AI-generated intelligence is more useful when every important claim can be inspected.**
+**Generated intelligence is useful when its claims can be inspected.** CortexOS combines multi-agent research with a deterministic Rust verification path and a local Tauri application backed by SQLite.
 
-- **Multi-agent research:** specialized workflows gather company, market, and account signals from multiple sources.
-- **Source-backed verification:** a deterministic Rust pipeline compares extracted claims against source material and records confidence.
-- **Local application:** the Tauri desktop runtime combines a React interface, Rust services, and embedded SQLite storage.
-
-[Repository](https://github.com/DevChiniwala/CortexOS) · [Frontend manifest](https://github.com/DevChiniwala/CortexOS/blob/main/package.json) · [Rust core](https://github.com/DevChiniwala/CortexOS/blob/main/src-tauri/Cargo.toml)
-
-`React` `TypeScript` `Tauri` `Rust` `Tokio` `SQLite`
+[Repository](https://github.com/DevChiniwala/CortexOS) · [Frontend manifest](https://github.com/DevChiniwala/CortexOS/blob/main/package.json) · [Rust core](https://github.com/DevChiniwala/CortexOS/blob/main/src-tauri/Cargo.toml)<br/>
+<code>React</code> <code>TypeScript</code> <code>Tauri</code> <code>Rust</code> <code>Tokio</code> <code>SQLite</code>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
@@ -84,55 +63,41 @@ I build across three connected engineering problems: operating AI agents in prod
 
 ### 04 — VYGOT / Adaptive learning
 
-`PRIVATE TEAM PROJECT` `PUBLIC LAUNCH UPCOMING`
+<img src="./assets/card-vygot.svg" alt="VYGOT — private team project exploring adaptive learning intelligence, with a public launch upcoming" width="100%"/>
 
-<img src="./assets/card-vygot.svg" alt="VYGOT — private adaptive learning intelligence project with a public launch upcoming" width="100%"/>
-
-VYGOT is a private team project exploring personalized learning intelligence: adapting instructional strategy to how each learner learns. Product and implementation details remain intentionally limited ahead of its public launch.
-
-<br/>
+VYGOT is a private team project exploring personalized learning intelligence. Product and implementation details remain limited until its public launch.
 
 ### 05 — HeyClara / Always-on personal agent
 
-`PUBLIC PACKAGE` `MIT` `v0.4.4`
-
 <a href="https://github.com/DevChiniwala/HeyClara">
-  <img src="./assets/card-heyclara-v2.svg" alt="HeyClara — always-on personal AI assistant daemon" width="100%"/>
+  <img src="./assets/card-heyclara-v2.svg" alt="HeyClara — scheduled personal agent with persistent workspaces, memory, MCP tools, and multi-channel delivery" width="100%"/>
 </a>
 
-**A personal agent should keep working between chat sessions.**
+**A personal agent should continue useful work between conversations.** HeyClara runs scheduled jobs with persistent workspaces, consolidates memory in two stages, and exposes shared MCP tools across Telegram, Slack, voice, and SMS.
 
-- Scheduled jobs run with persistent workspaces, model routing, audit records, and agent-specific personas.
-- Two-stage memory consolidates repeated signals before promoting them into durable memory and rules.
-- A shared MCP tool server supports Telegram, Slack, voice, SMS, and harness failover.
-
-[Repository](https://github.com/DevChiniwala/HeyClara) · [npm package](https://www.npmjs.com/package/@devchiniwala/heyclara) · [Documentation](https://github.com/DevChiniwala/HeyClara/tree/main/docs)
-
-`Bun` `TypeScript` `Claude Agent SDK` `MCP` `PostgreSQL` `Zod`
+[Repository](https://github.com/DevChiniwala/HeyClara) · [npm package](https://www.npmjs.com/package/@devchiniwala/heyclara) · [Documentation](https://github.com/DevChiniwala/HeyClara/tree/main/docs)<br/>
+<code>Bun</code> <code>TypeScript</code> <code>Claude Agent SDK</code> <code>MCP</code> <code>PostgreSQL</code> <code>Zod</code>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
-## 03 / Portfolio map
+## 03 / System portfolio
 
-<img src="./assets/portfolio-map.svg" alt="Portfolio map: ControlSurface operates agents, MNEMOS preserves memory, CortexOS verifies intelligence, and VYGOT and HeyClara apply AI to user workflows" width="100%"/>
+<img src="./assets/portfolio-map.svg" alt="Portfolio map of five independent systems across agent operations, temporal memory, source verification, adaptive learning, and personal automation" width="100%"/>
 
-- **Operate:** ControlSurface turns production traces and failures into reliability work.
-- **Remember:** MNEMOS models changing knowledge, provenance, retrieval, and consolidation.
-- **Verify:** CortexOS attaches source evidence to automated intelligence workflows.
-- **Apply:** VYGOT and HeyClara bring adaptive AI into ongoing user workflows.
-
-These are separate systems in one engineering portfolio; the map describes their focus rather than implying a shared runtime.
+Each project is an independent system. The map describes the engineering surface each one owns without implying a shared runtime.
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
 ## 04 / Open-source engineering
 
-Alongside my own systems, I have contributed **70+ merged pull requests** across AI infrastructure, developer tooling, retrieval systems, data platforms, and cross-platform reliability.
+I have contributed **70+ merged pull requests** across AI infrastructure, developer tooling, retrieval systems, data platforms, and cross-platform reliability.
 
-- [Reticle #1286](https://github.com/reticlehq/reticle/pull/1286) — preserved declared network URLs through browser action replay.
-- [ChunkHound #419](https://github.com/chunkhound/chunkhound/pull/419) — replaced embedding full-table scans with targeted SQL.
-- [HelixDB #1164](https://github.com/HelixDB/helix-db/pull/1164) — validated signed 64-bit values across generated SDKs.
-- [DataMind #21](https://github.com/OpenDCAI/DataMind/pull/21) — redacted secrets from audit errors.
+| Selected contribution | Engineering change |
+|---|---|
+| [Reticle #1286](https://github.com/reticlehq/reticle/pull/1286) | Preserved declared network URLs through browser action replay. |
+| [ChunkHound #419](https://github.com/chunkhound/chunkhound/pull/419) | Replaced embedding full-table scans with targeted SQL. |
+| [HelixDB #1164](https://github.com/HelixDB/helix-db/pull/1164) | Validated signed 64-bit values across generated SDKs. |
+| [DataMind #21](https://github.com/OpenDCAI/DataMind/pull/21) | Redacted secrets from audit errors. |
 
 [Browse all merged contributions →](https://github.com/search?q=is%3Apr+author%3ADevChiniwala+is%3Amerged&type=pullrequests)
 
@@ -140,28 +105,25 @@ Alongside my own systems, I have contributed **70+ merged pull requests** across
 
 ## 05 / AI systems stack
 
-<img src="./assets/stack-v2.svg" alt="AI systems stack organized by core languages, agent systems, memory and data, and reliability and delivery" width="100%"/>
-
-| Area | Current toolkit |
-|---|---|
-| **Core** | Python · TypeScript · Rust · SQL |
-| **Agents & AI** | Claude Agent SDK · MCP · OpenAI · Gemini · RAG · evaluation |
-| **Memory & data** | Hybrid retrieval · BM25 · knowledge graphs · PostgreSQL · ClickHouse · Neo4j · SQLite |
-| **Reliability & delivery** | FastAPI · OpenTelemetry · Docker Compose · GitHub Actions · Playwright · pytest · React · Next.js · Tauri · Bun |
+<img src="./assets/stack-v2.svg" alt="Engineering stack across core runtimes, agent systems, memory and data, reliability, and delivery" width="100%"/>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
 ## 06 / Engineering principles
 
-```text
-01  Production failures should become regression tests.
-02  Memory should model change, provenance, and validity.
-03  AI decisions should carry evidence and operational boundaries.
-```
+<img src="./assets/principles.svg" alt="Four engineering principles: reduce apparent complexity, design for evolution, shorten feedback loops, and turn failure into knowledge" width="100%"/>
+
+The panel paraphrases ideas from [A Philosophy of Software Design](https://web.stanford.edu/~ouster/cgi-bin/book.php), [Designing Data-Intensive Applications](https://dataintensive.net/), [Accelerate](https://itrevolution.com/product/accelerate/), and [Site Reliability Engineering](https://sre.google/books/).
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
-## 07 / Activity
+## 07 / Live GitHub telemetry
+
+<a href="https://github.com/DevChiniwala?tab=repositories">
+  <img src="./assets/telemetry.svg" alt="Daily generated public GitHub telemetry for DevChiniwala" width="100%"/>
+</a>
+
+Generated daily from GitHub's public REST API. Repository and star totals are scoped in the panel; language share uses owned, non-fork public repositories. [Generator](./scripts/update-profile-telemetry.mjs) · [Workflow](./.github/workflows/update-profile-telemetry.yml)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DevChiniwala/DevChiniwala/output/github-snake-dark.svg"/>
@@ -175,13 +137,16 @@ Alongside my own systems, I have contributed **70+ merged pull requests** across
 
 <div align="center">
 
-Building reliable agents, temporal memory systems, and evidence-backed AI products.
+I build the systems around AI models: data, memory, evaluation, runtimes, and product delivery.
 
 ```bash
 npx devcard0707
 ```
 
-<a href="https://www.linkedin.com/in/dev-chiniwala/"><code>LinkedIn</code></a>&nbsp;·&nbsp;<a href="https://x.com/DevChiniwala"><code>X / Twitter</code></a>&nbsp;·&nbsp;<a href="mailto:dev.chiniwala@gmail.com"><code>Email</code></a>&nbsp;·&nbsp;<a href="https://github.com/DevChiniwala"><code>GitHub</code></a>
+<a href="https://www.linkedin.com/in/dev-chiniwala/"><code>LinkedIn</code></a>
+· <a href="https://x.com/DevChiniwala"><code>X / Twitter</code></a>
+· <a href="mailto:dev.chiniwala@gmail.com"><code>Email</code></a>
+· <a href="https://github.com/DevChiniwala"><code>GitHub</code></a>
 
 </div>
 <!-- end profile -->

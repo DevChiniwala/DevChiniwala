@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="920" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering principles grounded in established software engineering books</title>
+  <desc id="desc">Four paraphrased principles about managing complexity, designing for change, shortening feedback loops, and learning from failure.</desc>
+  <defs>
+    <pattern id="pr-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7A8A9E" stroke-width=".5" opacity=".1"/>
+    </pattern>
+    <linearGradient id="pr-scan-gradient" x1="0" x2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00E5FF" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="pr-glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .mono { font-family:'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
+    .heading { font-size:13px; font-weight:800; fill:#00E5FF; letter-spacing:1.45px; }
+    .body { font-size:11.5px; font-weight:600; fill:#F8FAFC; }
+    .source { font-size:9px; font-weight:700; fill:#7A8A9E; letter-spacing:.55px; }
+    .flow { animation:pr-flow 4s linear infinite; }
+    .pulse { transform-box:fill-box; transform-origin:center; animation:pr-pulse 2.7s ease-in-out infinite; }
+    .scan { animation:pr-scan 9s ease-in-out infinite; }
+    @keyframes pr-flow { to { stroke-dashoffset:-40; } }
+    @keyframes pr-pulse { 0%,100% { opacity:.35; transform:scale(.82); } 50% { opacity:1; transform:scale(1.15); } }
+    @keyframes pr-scan { 0%,15% { transform:translateX(-240px); } 78%,100% { transform:translateX(1160px); } }
+    @media (prefers-reduced-motion:reduce) { .flow,.pulse,.scan { animation:none; } }
+  </style>
+
+  <rect width="920" height="520" fill="#080B10"/>
+  <rect width="920" height="520" fill="url(#pr-grid)"/>
+  <rect x=".75" y=".75" width="918.5" height="518.5" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+  <rect class="scan" x="-240" y="1" width="240" height="518" fill="url(#pr-scan-gradient)"/>
+
+  <g class="mono">
+    <text x="26" y="36" font-size="14" font-weight="800" fill="#00E5FF" letter-spacing="2.5">ENGINEERING PRINCIPLES // BOOK-GROUNDED</text>
+    <text x="894" y="36" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.3">PARAPHRASED · APPLIED IN PRACTICE</text>
+    <text x="26" y="66" font-size="12" fill="#F8FAFC">Four rules for building systems that remain understandable, changeable, and operable.</text>
+    <line x1="26" y1="84" x2="894" y2="84" stroke="#7A8A9E" opacity=".25"/>
+
+    <path class="flow" d="M452 194H468M452 398H468M238 286V302M682 286V302" fill="none" stroke="#00E5FF" stroke-width="1.3" stroke-dasharray="5 7" opacity=".48"/>
+
+    <g transform="translate(24 102)">
+      <rect width="428" height="184" rx="5" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="184" rx="2.5" fill="#00E5FF"/>
+      <text x="402" y="25" text-anchor="end" font-size="10" font-weight="700" fill="#7A8A9E">01 / COMPLEXITY</text>
+      <g transform="translate(40 53)">
+        <rect x="-13" y="-13" width="26" height="26" rx="4" fill="#080B10" stroke="#00E5FF"/>
+        <rect class="pulse" x="-4" y="-4" width="8" height="8" rx="2" fill="#7DF9FF" filter="url(#pr-glow)"/>
+      </g>
+      <text class="heading" x="67" y="58">REDUCE APPARENT COMPLEXITY</text>
+      <line x1="24" y1="78" x2="404" y2="78" stroke="#7A8A9E" opacity=".2"/>
+      <text class="body" x="24" y="105">Hide difficult decisions behind small, stable</text>
+      <text class="body" x="24" y="126">interfaces with clear responsibilities.</text>
+      <text class="source" x="24" y="158">A PHILOSOPHY OF SOFTWARE DESIGN</text>
+      <text class="source" x="24" y="174">JOHN OUSTERHOUT</text>
+    </g>
+
+    <g transform="translate(468 102)">
+      <rect width="428" height="184" rx="5" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="184" rx="2.5" fill="#00E5FF"/>
+      <text x="402" y="25" text-anchor="end" font-size="10" font-weight="700" fill="#7A8A9E">02 / EVOLUTION</text>
+      <g transform="translate(40 53)">
+        <circle r="14" fill="#080B10" stroke="#00E5FF"/>
+        <circle class="pulse" r="4" fill="#7DF9FF" filter="url(#pr-glow)" style="animation-delay:.35s"/>
+        <path d="M0-14A14 14 0 0 1 14 0" fill="none" stroke="#7DF9FF" stroke-width="2"/>
+      </g>
+      <text class="heading" x="67" y="58">DESIGN FOR EVOLUTION</text>
+      <line x1="24" y1="78" x2="404" y2="78" stroke="#7A8A9E" opacity=".2"/>
+      <text class="body" x="24" y="105">Choose architecture for operability, simplicity,</text>
+      <text class="body" x="24" y="126">and safe change as requirements move.</text>
+      <text class="source" x="24" y="158">DESIGNING DATA-INTENSIVE APPLICATIONS</text>
+      <text class="source" x="24" y="174">MARTIN KLEPPMANN</text>
+    </g>
+
+    <g transform="translate(24 302)">
+      <rect width="428" height="184" rx="5" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="184" rx="2.5" fill="#00E5FF"/>
+      <text x="402" y="25" text-anchor="end" font-size="10" font-weight="700" fill="#7A8A9E">03 / DELIVERY</text>
+      <g transform="translate(40 53)">
+        <path class="flow" d="M-14 0H14" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <circle class="pulse" cx="14" r="4" fill="#7DF9FF" filter="url(#pr-glow)" style="animation-delay:.7s"/>
+      </g>
+      <text class="heading" x="67" y="58">SHORTEN THE FEEDBACK LOOP</text>
+      <line x1="24" y1="78" x2="404" y2="78" stroke="#7A8A9E" opacity=".2"/>
+      <text class="body" x="24" y="105">Ship small, measurable changes and use delivery</text>
+      <text class="body" x="24" y="126">data to guide the next decision.</text>
+      <text class="source" x="24" y="158">ACCELERATE</text>
+      <text class="source" x="24" y="174">FORSGREN · HUMBLE · KIM</text>
+    </g>
+
+    <g transform="translate(468 302)">
+      <rect width="428" height="184" rx="5" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="184" rx="2.5" fill="#00E5FF"/>
+      <text x="402" y="25" text-anchor="end" font-size="10" font-weight="700" fill="#7A8A9E">04 / RELIABILITY</text>
+      <g transform="translate(40 53)">
+        <path d="M-14 7L-5-2L2 5L14-9" fill="none" stroke="#00E5FF" stroke-width="1.7"/>
+        <circle class="pulse" cx="14" cy="-9" r="4" fill="#7DF9FF" filter="url(#pr-glow)" style="animation-delay:1.05s"/>
+      </g>
+      <text class="heading" x="67" y="58">TURN FAILURE INTO KNOWLEDGE</text>
+      <line x1="24" y1="78" x2="404" y2="78" stroke="#7A8A9E" opacity=".2"/>
+      <text class="body" x="24" y="105">Observe failures, review them without blame,</text>
+      <text class="body" x="24" y="126">and engineer against recurrence.</text>
+      <text class="source" x="24" y="158">SITE RELIABILITY ENGINEERING</text>
+      <text class="source" x="24" y="174">BEYER · JONES · PETOFF · MURPHY</text>
+    </g>
+
+    <text x="26" y="507" font-size="8" fill="#7A8A9E" letter-spacing=".7">PRINCIPLES ARE PARAPHRASES · BOOK LINKS AND AUTHORS APPEAR IN THE README</text>
+  </g>
+</svg>

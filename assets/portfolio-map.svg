@@ -1,103 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 610" width="920" height="610" role="img" aria-labelledby="title desc">
-  <title id="title">Dev Chiniwala portfolio map</title>
-  <desc id="desc">Five independent projects grouped by their primary purpose: operate, remember, verify, and apply.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 650" width="920" height="650" role="img" aria-labelledby="title desc">
+  <title id="title">Dev Chiniwala system portfolio</title>
+  <desc id="desc">Five independent systems grouped by their primary engineering purpose: operate, remember, verify, and apply.</desc>
 
   <defs>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <pattern id="portfolio-grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#7A8A9E" stroke-width="0.5" opacity="0.11"/>
     </pattern>
+    <filter id="portfolio-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="portfolio-scan" x1="0" x2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
   <style>
     .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
-    .category { font-size: 12px; font-weight: 700; fill: #00E5FF; letter-spacing: 2px; }
-    .project { font-size: 22px; font-weight: 900; fill: #F8FAFC; letter-spacing: 2px; }
-    .summary { font-size: 11px; fill: #7A8A9E; letter-spacing: 0.2px; }
+    .category { font-size: 13px; font-weight: 800; fill: #00E5FF; letter-spacing: 2px; }
+    .project { font-size: 24px; font-weight: 900; fill: #F8FAFC; letter-spacing: 2px; }
+    .summary { font-size: 12px; fill: #7A8A9E; letter-spacing: 0.2px; }
     .number { font-size: 10px; font-weight: 700; fill: #00E5FF; letter-spacing: 1px; }
+    .pulse { transform-box: fill-box; transform-origin: center; animation: portfolio-pulse 2.8s ease-in-out infinite; }
+    .flow { animation: portfolio-flow 4s linear infinite; }
+    .scan { animation: portfolio-scan 8s ease-in-out infinite; }
+    @keyframes portfolio-pulse { 0%,100% { opacity: .45; transform: scale(.82); } 50% { opacity: 1; transform: scale(1.16); } }
+    @keyframes portfolio-flow { to { stroke-dashoffset: -48; } }
+    @keyframes portfolio-scan { 0%,12% { transform: translateX(-260px); } 78%,100% { transform: translateX(1180px); } }
+    @media (prefers-reduced-motion: reduce) { .pulse,.flow,.scan { animation: none; } }
   </style>
 
-  <rect width="920" height="610" fill="#080B10"/>
-  <rect width="920" height="610" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="919" height="609" fill="none" stroke="#00E5FF" stroke-width="1"/>
+  <rect width="920" height="650" fill="#080B10"/>
+  <rect width="920" height="650" fill="url(#portfolio-grid)"/>
+  <rect x="0.75" y="0.75" width="918.5" height="648.5" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+  <rect class="scan" x="-260" y="1" width="260" height="648" fill="url(#portfolio-scan)"/>
 
   <g class="mono">
-    <text x="24" y="34" font-size="13" font-weight="700" fill="#00E5FF" letter-spacing="2.5">PORTFOLIO // SYSTEM MAP</text>
-    <text x="896" y="34" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">INDEPENDENT PROJECTS · DISTINCT JOBS</text>
-    <text x="24" y="62" font-size="11" fill="#F8FAFC">A focused set of systems for operating, remembering, verifying, and applying AI.</text>
-    <line x1="24" y1="78" x2="896" y2="78" stroke="#10141D" stroke-width="2"/>
+    <text x="26" y="35" font-size="14" font-weight="800" fill="#00E5FF" letter-spacing="2.5">PORTFOLIO // SYSTEM MAP</text>
+    <text x="894" y="35" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">05 SYSTEMS · 04 ENGINEERING SURFACES</text>
+    <text x="26" y="64" font-size="12" fill="#F8FAFC">Independent systems, ordered by where they create engineering value.</text>
+    <line x1="26" y1="82" x2="894" y2="82" stroke="#7A8A9E" stroke-width="1" opacity="0.25"/>
 
-    <!-- OPERATE -->
-    <g transform="translate(24 96)">
-      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
-      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
-      <text class="category" x="22" y="57">OPERATE</text>
-      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">PRODUCTION AI</text>
-    </g>
-    <g transform="translate(190 96)">
-      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
-      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
-      <text class="number" x="680" y="24" text-anchor="end">01</text>
-      <text class="project" x="24" y="43">CONTROLSURFACE</text>
-      <text class="summary" x="24" y="69">Observability, reliability, incident intelligence, regression testing, and release gates.</text>
-      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">AGENT PRODUCTION ENGINEERING</text>
-    </g>
+    <path class="flow" d="M57 132V529" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="7 9" opacity="0.42"/>
 
-    <!-- REMEMBER -->
-    <g transform="translate(24 216)">
-      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
-      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
-      <text class="category" x="22" y="57">REMEMBER</text>
-      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">AGENT MEMORY</text>
+    <g transform="translate(24 100)">
+      <rect width="166" height="112" rx="5" fill="#10141D" stroke="#00E5FF"/>
+      <circle class="pulse" cx="32" cy="28" r="6" fill="#7DF9FF" filter="url(#portfolio-glow)"/>
+      <text class="category" x="24" y="68">OPERATE</text>
+      <text x="24" y="91" font-size="9" fill="#7A8A9E" letter-spacing="1.1">PRODUCTION AI</text>
     </g>
-    <g transform="translate(190 216)">
-      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
-      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
-      <text class="number" x="680" y="24" text-anchor="end">02</text>
-      <text class="project" x="24" y="43">MNEMOS</text>
-      <text class="summary" x="24" y="69">Bi-temporal memory, hybrid retrieval, knowledge graphs, and cognitive decay.</text>
-      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">SELF-EDITING MEMORY RUNTIME</text>
+    <g transform="translate(206 100)">
+      <rect width="690" height="112" rx="5" fill="#10141D" stroke="#7A8A9E" opacity="0.98"/>
+      <rect width="5" height="112" rx="2.5" fill="#00E5FF"/>
+      <text class="number" x="664" y="25" text-anchor="end">01 / PUBLIC</text>
+      <text class="project" x="26" y="47">CONTROLSURFACE</text>
+      <text class="summary" x="26" y="74">Agent observability, failure intelligence, regression evidence, and release gates.</text>
+      <text x="26" y="97" font-size="9" font-weight="800" fill="#7DF9FF" letter-spacing="1.2">TRACE → DIAGNOSE → EVALUATE → RELEASE</text>
+      <circle class="pulse" cx="655" cy="86" r="4" fill="#00E5FF"/>
     </g>
 
-    <!-- VERIFY -->
-    <g transform="translate(24 336)">
-      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
-      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
-      <text class="category" x="22" y="57">VERIFY</text>
-      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">INTELLIGENCE</text>
+    <g transform="translate(24 224)">
+      <rect width="166" height="112" rx="5" fill="#10141D" stroke="#00E5FF"/>
+      <circle class="pulse" cx="32" cy="28" r="6" fill="#7DF9FF" filter="url(#portfolio-glow)" style="animation-delay:.35s"/>
+      <text class="category" x="24" y="68">REMEMBER</text>
+      <text x="24" y="91" font-size="9" fill="#7A8A9E" letter-spacing="1.1">TEMPORAL STATE</text>
     </g>
-    <g transform="translate(190 336)">
-      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
-      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
-      <text class="number" x="680" y="24" text-anchor="end">03</text>
-      <text class="project" x="24" y="43">CORTEXOS</text>
-      <text class="summary" x="24" y="69">Autonomous research, market-signal analysis, insight verification, and reporting.</text>
-      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">VERIFICATION-FIRST RESEARCH</text>
+    <g transform="translate(206 224)">
+      <rect width="690" height="112" rx="5" fill="#10141D" stroke="#7A8A9E" opacity="0.98"/>
+      <rect width="5" height="112" rx="2.5" fill="#00E5FF"/>
+      <text class="number" x="664" y="25" text-anchor="end">02 / PUBLIC</text>
+      <text class="project" x="26" y="47">MNEMOS</text>
+      <text class="summary" x="26" y="74">Bi-temporal memory, hybrid retrieval, graph provenance, and consolidation.</text>
+      <text x="26" y="97" font-size="9" font-weight="800" fill="#7DF9FF" letter-spacing="1.2">INGEST → RESOLVE → RETRIEVE → CONSOLIDATE</text>
+      <circle class="pulse" cx="655" cy="86" r="4" fill="#00E5FF" style="animation-delay:.35s"/>
     </g>
 
-    <!-- APPLY -->
-    <g transform="translate(24 456)">
-      <rect width="146" height="128" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
-      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
-      <text class="category" x="22" y="64">APPLY</text>
-      <text x="22" y="86" font-size="9" fill="#7A8A9E" letter-spacing="1">FOCUSED PRODUCTS</text>
+    <g transform="translate(24 348)">
+      <rect width="166" height="112" rx="5" fill="#10141D" stroke="#00E5FF"/>
+      <circle class="pulse" cx="32" cy="28" r="6" fill="#7DF9FF" filter="url(#portfolio-glow)" style="animation-delay:.7s"/>
+      <text class="category" x="24" y="68">VERIFY</text>
+      <text x="24" y="91" font-size="9" fill="#7A8A9E" letter-spacing="1.1">SOURCE EVIDENCE</text>
     </g>
-    <g transform="translate(190 456)">
-      <rect width="343" height="128" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
-      <rect x="0" y="0" width="4" height="128" rx="2" fill="#00E5FF"/>
-      <text class="number" x="319" y="24" text-anchor="end">04</text>
-      <text x="24" y="46" font-size="19" font-weight="900" fill="#F8FAFC" letter-spacing="2">VYGOT</text>
-      <text class="summary" x="24" y="73">Adaptive learning and</text>
-      <text class="summary" x="24" y="91">cognitive intelligence.</text>
-      <text x="24" y="112" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1">LEARNING SYSTEMS</text>
+    <g transform="translate(206 348)">
+      <rect width="690" height="112" rx="5" fill="#10141D" stroke="#7A8A9E" opacity="0.98"/>
+      <rect width="5" height="112" rx="2.5" fill="#00E5FF"/>
+      <text class="number" x="664" y="25" text-anchor="end">03 / PUBLIC</text>
+      <text class="project" x="26" y="47">CORTEXOS</text>
+      <text class="summary" x="26" y="74">Multi-agent company research with deterministic, source-backed verification.</text>
+      <text x="26" y="97" font-size="9" font-weight="800" fill="#7DF9FF" letter-spacing="1.2">RESEARCH → EXTRACT → VERIFY → REPORT</text>
+      <circle class="pulse" cx="655" cy="86" r="4" fill="#00E5FF" style="animation-delay:.7s"/>
     </g>
-    <g transform="translate(549 456)">
-      <rect width="347" height="128" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
-      <rect x="0" y="0" width="4" height="128" rx="2" fill="#00E5FF"/>
-      <text class="number" x="323" y="24" text-anchor="end">05</text>
-      <text x="24" y="46" font-size="19" font-weight="900" fill="#F8FAFC" letter-spacing="2">HEYCLARA</text>
-      <text class="summary" x="24" y="73">Background automation and</text>
-      <text class="summary" x="24" y="91">long-term assistant memory.</text>
-      <text x="24" y="112" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1">PERSONAL AUTOMATION</text>
+
+    <g transform="translate(24 472)">
+      <rect width="166" height="152" rx="5" fill="#10141D" stroke="#00E5FF"/>
+      <circle class="pulse" cx="32" cy="28" r="6" fill="#7DF9FF" filter="url(#portfolio-glow)" style="animation-delay:1.05s"/>
+      <text class="category" x="24" y="78">APPLY</text>
+      <text x="24" y="101" font-size="9" fill="#7A8A9E" letter-spacing="1.1">FOCUSED PRODUCTS</text>
+      <text x="24" y="124" font-size="9" fill="#7A8A9E">LEARNING + AUTOMATION</text>
+    </g>
+    <g transform="translate(206 472)">
+      <rect width="336" height="152" rx="5" fill="#10141D" stroke="#7A8A9E" opacity="0.98"/>
+      <rect width="5" height="152" rx="2.5" fill="#00E5FF"/>
+      <text class="number" x="310" y="25" text-anchor="end">04 / PRIVATE</text>
+      <text x="26" y="52" font-size="22" font-weight="900" fill="#F8FAFC" letter-spacing="2">VYGOT</text>
+      <text class="summary" x="26" y="82">Adaptive learning intelligence</text>
+      <text class="summary" x="26" y="101">for personalized instruction.</text>
+      <text x="26" y="130" font-size="9" font-weight="800" fill="#7DF9FF" letter-spacing="1">PUBLIC LAUNCH UPCOMING</text>
+    </g>
+    <g transform="translate(554 472)">
+      <rect width="342" height="152" rx="5" fill="#10141D" stroke="#7A8A9E" opacity="0.98"/>
+      <rect width="5" height="152" rx="2.5" fill="#00E5FF"/>
+      <text class="number" x="316" y="25" text-anchor="end">05 / PUBLIC</text>
+      <text x="26" y="52" font-size="22" font-weight="900" fill="#F8FAFC" letter-spacing="2">HEYCLARA</text>
+      <text class="summary" x="26" y="82">Persistent personal automation</text>
+      <text class="summary" x="26" y="101">across scheduled workflows.</text>
+      <text x="26" y="130" font-size="9" font-weight="800" fill="#7DF9FF" letter-spacing="1">ALWAYS-ON AGENT DAEMON</text>
     </g>
   </g>
 </svg>
