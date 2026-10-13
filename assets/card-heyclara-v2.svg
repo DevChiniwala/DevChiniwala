@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360" role="img" aria-labelledby="title desc">
   <title id="title">HeyClara — always-on personal AI assistant daemon</title>
   <desc id="desc">A public TypeScript and Bun personal agent with scheduled jobs, persistent workspaces, two-stage memory, MCP tools, multi-channel messaging, and harness failover.</desc>
   <defs>
@@ -31,12 +31,12 @@
     @media (prefers-reduced-motion:reduce) { .flow,.pulse,.scan,.heartbeat { animation:none; } }
   </style>
 
-  <rect width="920" height="300" fill="#080B10"/>
-  <rect x="1" y="1" width="918" height="298" rx="5" fill="#10141D" stroke="#00E5FF"/>
-  <rect x="1" y="37" width="918" height="215" fill="url(#hc-grid)"/>
+  <rect width="920" height="360" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="358" rx="5" fill="#10141D" stroke="#00E5FF"/>
+  <rect x="1" y="37" width="918" height="275" fill="url(#hc-grid)"/>
   <rect x="1" y="1" width="918" height="36" rx="5" fill="#080B10"/>
   <rect x="1" y="32" width="918" height="5" fill="#080B10"/>
-  <rect class="scan" x="-220" y="37" width="220" height="215" fill="url(#hc-scan-gradient)"/>
+  <rect class="scan" x="-220" y="37" width="220" height="275" fill="url(#hc-scan-gradient)"/>
 
   <g class="mono">
     <text x="25" y="25" font-size="11" font-weight="700" fill="#7A8A9E" letter-spacing="2.2">APPLIED SYSTEM // 05</text>
@@ -44,60 +44,60 @@
     <text x="643" y="24" font-size="10" font-weight="700" fill="#00E5FF" letter-spacing="1">PUBLIC PACKAGE</text>
     <text x="895" y="24" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing=".8">v0.4.4 · MIT</text>
 
-    <text x="35" y="92" font-size="34" font-weight="900" fill="#F8FAFC" letter-spacing="3.5">HEYCLARA</text>
-    <text x="36" y="124" font-size="15" font-weight="700" fill="#00E5FF">Always-on personal agent</text>
-    <text x="36" y="158" font-size="12.5" fill="#7A8A9E">Scheduled work, persistent context,</text>
-    <text x="36" y="179" font-size="12.5" fill="#7A8A9E">memory consolidation, and channel delivery.</text>
+    <text x="35" y="104" font-size="38" font-weight="900" fill="#F8FAFC" letter-spacing="4">HEYCLARA</text>
+    <text x="36" y="140" font-size="16" font-weight="700" fill="#00E5FF">Always-on personal agent</text>
+    <text x="36" y="177" font-size="13" fill="#7A8A9E">Scheduled work, persistent context,</text>
+    <text x="36" y="200" font-size="13" fill="#7A8A9E">memory consolidation, and channel delivery.</text>
 
-    <g transform="translate(35 199)">
-      <rect width="300" height="38" rx="4" fill="#080B10" stroke="#7A8A9E" opacity=".95"/>
-      <rect width="4" height="38" rx="2" fill="#00E5FF"/>
-      <text x="18" y="16" font-size="8.5" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">RUNTIME</text>
-      <text x="18" y="30" font-size="9.5" fill="#F8FAFC">Durable jobs with audit records and failover.</text>
-    </g>
-
-    <text x="380" y="66" font-size="10" font-weight="700" fill="#7A8A9E" letter-spacing="1.8">BACKGROUND JOB // DELIVERY PATH</text>
-
-    <path class="flow" d="M427 146H480M556 146H609M685 146H738M814 146H854" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#hc-arrow)" opacity=".72"/>
-
-    <g transform="translate(405 146)">
-      <circle r="31" fill="#080B10" stroke="#7A8A9E"/>
-      <path class="heartbeat" d="M-14 0H-7L-3-10L4 11L8 0H15" fill="none" stroke="#7DF9FF" stroke-width="1.8"/>
-      <text y="51" text-anchor="middle" font-size="8.5" font-weight="700" fill="#F8FAFC">SCHEDULE</text>
-    </g>
-    <g transform="translate(518 146)">
-      <rect x="-38" y="-38" width="76" height="76" rx="6" fill="#080B10" stroke="#7A8A9E"/>
-      <circle class="pulse" r="7" fill="#00E5FF" filter="url(#hc-glow)"/>
-      <text y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#F8FAFC">WORKSPACE</text>
-    </g>
-    <g transform="translate(647 146)">
-      <rect x="-38" y="-38" width="76" height="76" rx="6" fill="#080B10" stroke="#00E5FF" stroke-width="1.4"/>
-      <path d="M-15 8V-8L0-17L15-8V8L0 17Z" fill="none" stroke="#7DF9FF" stroke-width="1.4"/>
-      <circle class="pulse" r="5" fill="#00E5FF" filter="url(#hc-glow)" style="animation-delay:.35s"/>
-      <text y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#F8FAFC">AGENT</text>
-    </g>
-    <g transform="translate(776 146)">
-      <rect x="-38" y="-38" width="76" height="76" rx="6" fill="#080B10" stroke="#7A8A9E"/>
-      <circle cx="-13" cy="0" r="5" fill="#7DF9FF"/>
-      <circle cx="13" cy="-12" r="5" fill="#00E5FF"/>
-      <circle cx="13" cy="12" r="5" fill="#00E5FF"/>
-      <path d="M-8 0H1M1 0L8-9M1 0L8 9" fill="none" stroke="#7DF9FF"/>
-      <text y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#F8FAFC">MCP TOOLS</text>
-    </g>
-    <g transform="translate(872 146)">
-      <circle r="28" fill="#080B10" stroke="#7A8A9E"/>
-      <circle class="pulse" r="6" fill="#7DF9FF" filter="url(#hc-glow)" style="animation-delay:.7s"/>
-      <text y="48" text-anchor="middle" font-size="8.5" font-weight="700" fill="#F8FAFC">CHANNELS</text>
+    <g transform="translate(35 226)">
+      <rect width="310" height="61" rx="5" fill="#080B10" stroke="#7A8A9E" opacity=".95"/>
+      <rect width="5" height="61" rx="2.5" fill="#00E5FF"/>
+      <text x="20" y="23" font-size="9.5" font-weight="700" fill="#7DF9FF" letter-spacing="1.4">RUNTIME</text>
+      <text x="20" y="44" font-size="10.5" fill="#F8FAFC">Durable jobs with audit records and failover.</text>
     </g>
 
-    <path class="flow" d="M647 202C647 232 518 232 518 202" fill="none" stroke="#00E5FF" stroke-width="1.1" stroke-dasharray="5 7" opacity=".42" marker-end="url(#hc-arrow)" style="animation-delay:.5s"/>
-    <text x="582" y="228" text-anchor="middle" font-size="8" fill="#7A8A9E" letter-spacing="1">MEMORY CONSOLIDATION</text>
+    <text x="375" y="70" font-size="10.5" font-weight="700" fill="#7A8A9E" letter-spacing="1.8">BACKGROUND JOB // DELIVERY PATH</text>
+
+    <path class="flow" d="M437 166H472M558 166H599M685 166H727M813 166H836" fill="none" stroke="#00E5FF" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#hc-arrow)" opacity=".72"/>
+
+    <g transform="translate(400 166)">
+      <circle r="36" fill="#080B10" stroke="#7A8A9E"/>
+      <path class="heartbeat" d="M-17 0H-8L-4-12L5 13L10 0H18" fill="none" stroke="#7DF9FF" stroke-width="2"/>
+      <text y="59" text-anchor="middle" font-size="9" font-weight="700" fill="#F8FAFC">SCHEDULE</text>
+    </g>
+    <g transform="translate(515 166)">
+      <rect x="-43" y="-43" width="86" height="86" rx="7" fill="#080B10" stroke="#7A8A9E"/>
+      <circle class="pulse" r="8" fill="#00E5FF" filter="url(#hc-glow)"/>
+      <text y="64" text-anchor="middle" font-size="9" font-weight="700" fill="#F8FAFC">WORKSPACE</text>
+    </g>
+    <g transform="translate(642 166)">
+      <rect x="-43" y="-43" width="86" height="86" rx="7" fill="#080B10" stroke="#00E5FF" stroke-width="1.5"/>
+      <path d="M-18 10V-10L0-21L18-10V10L0 21Z" fill="none" stroke="#7DF9FF" stroke-width="1.5"/>
+      <circle class="pulse" r="6" fill="#00E5FF" filter="url(#hc-glow)" style="animation-delay:.35s"/>
+      <text y="64" text-anchor="middle" font-size="9" font-weight="700" fill="#F8FAFC">AGENT</text>
+    </g>
+    <g transform="translate(770 166)">
+      <rect x="-43" y="-43" width="86" height="86" rx="7" fill="#080B10" stroke="#7A8A9E"/>
+      <circle cx="-15" cy="0" r="6" fill="#7DF9FF"/>
+      <circle cx="15" cy="-14" r="6" fill="#00E5FF"/>
+      <circle cx="15" cy="14" r="6" fill="#00E5FF"/>
+      <path d="M-9 0H1M1 0L9-10M1 0L9 10" fill="none" stroke="#7DF9FF" stroke-width="1.2"/>
+      <text y="64" text-anchor="middle" font-size="9" font-weight="700" fill="#F8FAFC">MCP TOOLS</text>
+    </g>
+    <g transform="translate(870 166)">
+      <circle r="34" fill="#080B10" stroke="#7A8A9E"/>
+      <circle class="pulse" r="7" fill="#7DF9FF" filter="url(#hc-glow)" style="animation-delay:.7s"/>
+      <text y="57" text-anchor="middle" font-size="9" font-weight="700" fill="#F8FAFC">CHANNELS</text>
+    </g>
+
+    <path class="flow" d="M642 219C642 278 515 278 515 219" fill="none" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="5 7" opacity=".42" marker-end="url(#hc-arrow)" style="animation-delay:.5s"/>
+    <text x="579" y="284" text-anchor="middle" font-size="8.5" fill="#7A8A9E" letter-spacing="1">MEMORY CONSOLIDATION</text>
   </g>
 
-  <rect x="1" y="252" width="918" height="47" fill="#080B10"/>
+  <rect x="1" y="312" width="918" height="47" fill="#080B10"/>
   <g class="mono">
-    <text x="28" y="281" font-size="10.5" font-weight="700" fill="#00E5FF" letter-spacing="1.8">STACK</text>
-    <text x="90" y="281" font-size="11.5" font-weight="600" fill="#F8FAFC">BUN · TYPESCRIPT · CLAUDE AGENT SDK · MCP · POSTGRESQL</text>
-    <text x="895" y="281" text-anchor="end" font-size="9.5" fill="#7A8A9E" letter-spacing="1">TELEGRAM · SLACK · VOICE · SMS</text>
+    <text x="28" y="341" font-size="10.5" font-weight="700" fill="#00E5FF" letter-spacing="1.8">STACK</text>
+    <text x="90" y="341" font-size="11.5" font-weight="600" fill="#F8FAFC">BUN · TYPESCRIPT · CLAUDE AGENT SDK · MCP · POSTGRESQL</text>
+    <text x="895" y="341" text-anchor="end" font-size="9.5" fill="#7A8A9E" letter-spacing="1">TELEGRAM · SLACK · VOICE · SMS</text>
   </g>
 </svg>

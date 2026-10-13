@@ -105,7 +105,7 @@ I have contributed **70+ merged pull requests** across AI infrastructure, develo
 
 ## 05 / AI systems stack
 
-<img src="./assets/stack-v2.svg" alt="Engineering stack across core runtimes, agent systems, memory and data, reliability, and delivery" width="100%"/>
+<img src="./assets/stack-v2.svg" alt="Engineering stack across languages, models and AI, agents and context, runtime and product, data and memory, and infrastructure and reliability" width="100%"/>
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
 
@@ -123,7 +123,7 @@ The panel paraphrases ideas from [A Philosophy of Software Design](https://web.s
   <img src="./assets/telemetry.svg" alt="Daily generated public GitHub telemetry for DevChiniwala" width="100%"/>
 </a>
 
-Generated daily from GitHub's public REST API. Repository and star totals are scoped in the panel; language share uses owned, non-fork public repositories. [Generator](./scripts/update-profile-telemetry.mjs) · [Workflow](./.github/workflows/update-profile-telemetry.yml)
+Generated daily from GitHub's public REST API. Repository and contribution counts are scoped in the panel; language share uses owned, non-fork public repositories. [Generator](./scripts/update-profile-telemetry.mjs) · [Workflow](./.github/workflows/update-profile-telemetry.yml)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DevChiniwala/DevChiniwala/output/github-snake-dark.svg"/>

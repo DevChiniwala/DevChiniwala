@@ -139,10 +139,6 @@ async function collectTelemetry() {
     owner: canonicalOwner,
     publicRepositories: user.public_repos,
     ownedSourceRepositories: sourceRepositories.length,
-    ownedSourceStars: sourceRepositories.reduce(
-      (total, repository) => total + repository.stargazers_count,
-      0,
-    ),
     mergedPublicPullRequests: mergedPullRequests.total,
     externalRepositoriesContributed: externalRepositoriesContributed.size,
     generatedDate: new Date().toISOString().slice(0, 10),
@@ -166,13 +162,13 @@ function escapeXml(value) {
 
 function metricCard({ x, index, value, label, detail }) {
   return `
-    <g transform="translate(${x} 96)">
-      <rect width="286" height="146" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
-      <rect width="4" height="146" rx="2" fill="#00E5FF"/>
-      <text class="index" x="260" y="27" text-anchor="end">${index}</text>
-      <text class="metric" x="24" y="79">${escapeXml(value)}</text>
-      <text class="label" x="24" y="108">${escapeXml(label)}</text>
-      <text class="detail" x="24" y="130">${escapeXml(detail)}</text>
+    <g transform="translate(${x} 82)">
+      <rect width="394" height="164" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
+      <rect width="5" height="164" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="366" y="31" text-anchor="end">${index}</text>
+      <text class="metric" x="28" y="91">${escapeXml(value)}</text>
+      <text class="label" x="28" y="124">${escapeXml(label)}</text>
+      <text class="detail" x="28" y="148">${escapeXml(detail)}</text>
     </g>`;
 }
 
@@ -205,22 +201,15 @@ function renderSvg(data) {
       detail: "reported by GitHub",
     },
     {
-      x: 334,
+      x: 443,
       index: "02",
-      value: data.ownedSourceStars,
-      label: "STARS ACROSS OWNED SOURCE",
-      detail: "public · excludes forks",
-    },
-    {
-      x: 636,
-      index: "03",
       value: data.mergedPublicPullRequests,
       label: "MERGED PULL REQUESTS",
       detail: "public GitHub search",
     },
     {
-      x: 938,
-      index: "04",
+      x: 854,
+      index: "03",
       value: data.externalRepositoriesContributed,
       label: "EXTERNAL REPOS CONTRIBUTED",
       detail: "unique public repositories",
@@ -231,7 +220,7 @@ function renderSvg(data) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" width="1280" height="560" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(data.owner)} GitHub profile telemetry</title>
-  <desc id="desc">Daily generated public repository, star, merged pull request, external contribution, and language statistics from the GitHub REST API.</desc>
+  <desc id="desc">Daily generated public repository, merged pull request, external contribution, and language statistics from the GitHub REST API.</desc>
 
   <defs>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -254,9 +243,9 @@ function renderSvg(data) {
   <style>
     .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
     .index { font-size: 10px; font-weight: 700; fill: #7A8A9E; letter-spacing: 1.2px; }
-    .metric { font-size: 42px; font-weight: 900; fill: #F8FAFC; letter-spacing: 1px; }
-    .label { font-size: 11px; font-weight: 700; fill: #00E5FF; letter-spacing: 1.15px; }
-    .detail { font-size: 9px; font-weight: 500; fill: #7A8A9E; letter-spacing: 0.45px; }
+    .metric { font-size: 50px; font-weight: 900; fill: #F8FAFC; letter-spacing: 1px; }
+    .label { font-size: 12px; font-weight: 700; fill: #00E5FF; letter-spacing: 1.15px; }
+    .detail { font-size: 10px; font-weight: 500; fill: #7A8A9E; letter-spacing: 0.45px; }
     .language { font-size: 11px; font-weight: 700; fill: #F8FAFC; letter-spacing: 0.7px; }
     .percentage { font-size: 10px; font-weight: 700; fill: #7DF9FF; }
     .scan { animation: scan 9s linear infinite; }
@@ -303,16 +292,16 @@ function renderSvg(data) {
 
 ${cards}
 
-    <g transform="translate(32 266)">
-      <rect width="790" height="258" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
+    <g transform="translate(32 264)">
+      <rect width="790" height="260" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
       <text x="24" y="31" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="2">LANGUAGE DISTRIBUTION</text>
       <text x="766" y="31" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1">BY GITHUB-DETECTED BYTES</text>
       <line x1="24" y1="46" x2="766" y2="46" stroke="#7A8A9E" stroke-width="1" opacity="0.24"/>
 ${languageRows(data.languages)}
     </g>
 
-    <g transform="translate(838 266)">
-      <rect width="410" height="258" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
+    <g transform="translate(838 264)">
+      <rect width="410" height="260" rx="5" fill="#10141D" stroke="#7A8A9E" stroke-width="1"/>
       <text x="24" y="31" font-size="12" font-weight="700" fill="#00E5FF" letter-spacing="2">DATA SCOPE</text>
       <text x="386" y="31" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1">GITHUB REST API</text>
       <line x1="24" y1="46" x2="386" y2="46" stroke="#7A8A9E" stroke-width="1" opacity="0.24"/>
@@ -325,17 +314,17 @@ ${languageRows(data.languages)}
         <path class="flow" d="M-42 0H42" fill="none" stroke="#7DF9FF" stroke-width="1.4" stroke-dasharray="6 6" opacity="0.58"/>
       </g>
 
-      <g transform="translate(206 79)">
+      <g transform="translate(196 79)">
         <text font-size="10" font-weight="700" fill="#F8FAFC" letter-spacing="1.1">OWNED REPOSITORIES</text>
         <text class="detail" y="21">public repositories only</text>
         <text y="61" font-size="10" font-weight="700" fill="#F8FAFC" letter-spacing="1.1">SOURCE FILTER</text>
-        <text class="detail" y="82">forks excluded from stars + code</text>
+        <text class="detail" y="82">forks excluded from language mix</text>
         <text y="122" font-size="10" font-weight="700" fill="#F8FAFC" letter-spacing="1.1">AUTOMATED REFRESH</text>
         <text class="detail" y="143">daily via GitHub Actions</text>
       </g>
     </g>
 
-    <text x="32" y="546" font-size="8" fill="#7A8A9E" letter-spacing="0.8">COUNTS ARE A CURRENT SNAPSHOT · LANGUAGE SHARE USES OWNED NON-FORK PUBLIC REPOSITORIES</text>
+    <text x="32" y="546" font-size="8" fill="#7A8A9E" letter-spacing="0.8">COUNTS ARE A CURRENT SNAPSHOT &#183; LANGUAGE SHARE USES OWNED NON-FORK PUBLIC REPOSITORIES</text>
   </g>
 </svg>
 `;

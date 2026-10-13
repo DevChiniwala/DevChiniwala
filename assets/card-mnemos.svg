@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="920" height="320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420" role="img" aria-labelledby="title desc">
   <title id="title">MNEMOS &#8212; self-editing bi-temporal memory for AI agents</title>
   <desc id="desc">MNEMOS combines self-editing bi-temporal memory, six-signal retrieval, a knowledge graph, FSRS, and sleep consolidation.</desc>
   <defs>
@@ -30,12 +30,12 @@
     }
   </style>
 
-  <rect width="920" height="320" fill="#080B10"/>
-  <rect x="1" y="1" width="918" height="318" rx="6" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.58"/>
+  <rect width="920" height="420" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="418" rx="6" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.58"/>
   <rect x="1" y="1" width="918" height="42" rx="6" fill="#080B10"/>
   <rect x="1" y="36" width="918" height="7" fill="#080B10"/>
-  <rect x="1" y="43" width="918" height="224" fill="url(#mn-grid)"/>
-  <rect class="mn-scan" x="-220" y="43" width="220" height="224" fill="url(#mn-scan)"/>
+  <rect x="1" y="43" width="918" height="313" fill="url(#mn-grid)"/>
+  <rect class="mn-scan" x="-220" y="43" width="220" height="313" fill="url(#mn-scan)"/>
   <line x1="1" y1="43" x2="919" y2="43" stroke="#F8FAFC" stroke-opacity="0.1"/>
 
   <g class="mono">
@@ -53,6 +53,11 @@
     <circle class="mn-pulse" cx="53" cy="222" r="4" fill="#00E5FF"/>
     <text x="67" y="217" font-size="9.5" font-weight="700" fill="#F8FAFC" letter-spacing="1.1">6-SIGNAL RETRIEVAL</text>
     <text x="67" y="233" font-size="9" fill="#7A8A9E" letter-spacing=".8">GRAPH &#183; TEMPORAL &#183; CONSOLIDATION</text>
+
+    <rect x="34" y="260" width="292" height="36" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.34"/>
+    <text x="180" y="282" text-anchor="middle" font-size="8.8" font-weight="700" fill="#7A8A9E" letter-spacing=".75">CONSOLIDATION &#183; DECAY &#183; TOKEN-AWARE PACKING</text>
+    <rect x="34" y="308" width="292" height="28" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.28"/>
+    <text x="180" y="326" text-anchor="middle" font-size="9" font-weight="700" fill="#7A8A9E" letter-spacing="1">BI-TEMPORAL MEMORY LIFECYCLE</text>
 
     <text x="356" y="69" font-size="10" font-weight="700" letter-spacing="1.8" fill="#7A8A9E">MEMORY LIFECYCLE</text>
     <line x1="356" y1="79" x2="886" y2="79" stroke="#7A8A9E" opacity="0.22"/>
@@ -95,26 +100,45 @@
       <text x="850" y="231" font-size="8.5" fill="#7A8A9E">EXPIRE</text>
     </g>
 
-    <rect x="1" y="267" width="918" height="52" fill="#080B10"/>
-    <line x1="1" y1="267" x2="919" y2="267" stroke="#F8FAFC" stroke-opacity="0.1"/>
-    <text x="28" y="299" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#00E5FF">STACK</text>
+    <text x="356" y="258" font-size="9.5" font-weight="700" fill="#7A8A9E" letter-spacing="1.4">RETRIEVAL + CONSOLIDATION PATH</text>
+    <path class="mn-flow" d="M477 286H492M607 286H622M737 286H752" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-opacity="0.7"/>
+    <g text-anchor="middle" font-size="8.8" font-weight="700" letter-spacing=".65">
+      <rect x="356" y="269" width="121" height="36" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="416.5" y="291" fill="#F8FAFC">6-SIGNAL RETRIEVAL</text>
+      <rect x="492" y="269" width="115" height="36" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="549.5" y="291" fill="#F8FAFC">KNOWLEDGE GRAPH</text>
+      <rect x="622" y="269" width="115" height="36" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="679.5" y="291" fill="#F8FAFC">FSRS</text>
+      <rect x="752" y="269" width="134" height="36" rx="4" fill="#00E5FF" fill-opacity="0.06" stroke="#00E5FF" stroke-opacity="0.72"/>
+      <text x="819" y="291" fill="#00E5FF">SLEEP CONSOLIDATION</text>
+    </g>
+
+    <rect x="356" y="320" width="530" height="24" rx="3" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.34"/>
+    <text x="371" y="336" font-size="8.5" font-weight="700" fill="#00E5FF" letter-spacing="1">REPOSITORY PROOF</text>
+    <text x="506" y="336" font-size="8.5" font-weight="700" fill="#7A8A9E" letter-spacing=".8">PYPROJECT.TOML &#183; DOCUMENTATION &#183; MIT LICENSE</text>
+
+    <rect x="1" y="356" width="918" height="63" fill="#080B10"/>
+    <line x1="1" y1="356" x2="919" y2="356" stroke="#F8FAFC" stroke-opacity="0.1"/>
+    <text x="28" y="394" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#00E5FF">STACK</text>
     <g font-size="11.5" font-weight="600" fill="#F8FAFC">
-      <text x="109" y="299">Python</text><circle cx="166" cy="295" r="2" fill="#00E5FF"/>
-      <text x="180" y="299">MCP</text><circle cx="211" cy="295" r="2" fill="#00E5FF"/>
-      <text x="225" y="299">Neo4j</text><circle cx="273" cy="295" r="2" fill="#00E5FF"/>
-      <text x="287" y="299">FAISS</text>
+      <text x="109" y="394">Python</text><circle cx="166" cy="390" r="2" fill="#00E5FF"/>
+      <text x="180" y="394">MCP</text><circle cx="211" cy="390" r="2" fill="#00E5FF"/>
+      <text x="225" y="394">FastAPI</text><circle cx="288" cy="390" r="2" fill="#00E5FF"/>
+      <text x="302" y="394">Neo4j</text><circle cx="350" cy="390" r="2" fill="#00E5FF"/>
+      <text x="364" y="394">FAISS</text><circle cx="410" cy="390" r="2" fill="#00E5FF"/>
+      <text x="424" y="394">RAGAS</text>
     </g>
     <g font-size="9.5" font-weight="700" text-anchor="middle">
-      <rect x="393" y="281" width="139" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
-      <text x="462.5" y="298" fill="#7A8A9E">KNOWLEDGE GRAPH</text>
-      <rect x="542" y="281" width="92" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
-      <text x="588" y="298" fill="#7A8A9E">FSRS</text>
-      <rect x="644" y="281" width="242" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
-      <text x="765" y="298" fill="#7A8A9E">SLEEP CONSOLIDATION</text>
+      <rect x="530" y="376" width="114" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
+      <text x="587" y="393" fill="#7A8A9E">BI-TEMPORAL</text>
+      <rect x="654" y="376" width="92" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
+      <text x="700" y="393" fill="#7A8A9E">FSRS</text>
+      <rect x="756" y="376" width="130" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.3"/>
+      <text x="821" y="393" fill="#7A8A9E">SLEEP CONSOLIDATION</text>
     </g>
   </g>
 
   <g fill="none" stroke="#00E5FF" stroke-opacity="0.52" stroke-width="1.2">
-    <path d="M9 27V9H27M893 9H911V27M9 293V311H27M893 311H911V293"/>
+    <path d="M9 27V9H27M893 9H911V27M9 393V411H27M893 411H911V393"/>
   </g>
 </svg>

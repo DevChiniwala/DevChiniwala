@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 510" width="920" height="510" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 766" width="920" height="766" role="img" aria-labelledby="title desc">
   <title id="title">Dev Chiniwala engineering stack</title>
-  <desc id="desc">Selected tools and practices grouped into core engineering, agents and AI, memory and data, and reliability and delivery.</desc>
+  <desc id="desc">An expanded operating stack across languages, models and AI, agents and context, runtime and product, data and memory, and infrastructure and reliability.</desc>
 
   <defs>
     <pattern id="stack-grid" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -19,10 +19,10 @@
 
   <style>
     .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
-    .group { font-size: 14px; font-weight: 800; fill: #00E5FF; letter-spacing: 1.8px; }
-    .tools { font-size: 11px; font-weight: 600; fill: #F8FAFC; letter-spacing: 0.3px; }
-    .practice { font-size: 9px; font-weight: 800; fill: #7DF9FF; letter-spacing: 1px; }
-    .index { font-size: 10px; font-weight: 700; fill: #7A8A9E; letter-spacing: 1px; }
+    .group { font-size: 13.5px; font-weight: 800; fill: #00E5FF; letter-spacing: 1.55px; }
+    .tools { font-size: 10.4px; font-weight: 600; fill: #F8FAFC; letter-spacing: 0.18px; }
+    .practice { font-size: 8.5px; font-weight: 800; fill: #7DF9FF; letter-spacing: 0.9px; }
+    .index { font-size: 9.5px; font-weight: 700; fill: #7A8A9E; letter-spacing: 1px; }
     .flow { animation: stack-flow 3.6s linear infinite; }
     .pulse { transform-box: fill-box; transform-origin: center; animation: stack-pulse 2.4s ease-in-out infinite; }
     .scan { animation: stack-scan 9s ease-in-out infinite; }
@@ -32,71 +32,103 @@
     @media (prefers-reduced-motion: reduce) { .flow,.pulse,.scan { animation:none; } }
   </style>
 
-  <rect width="920" height="510" fill="#080B10"/>
-  <rect width="920" height="510" fill="url(#stack-grid)"/>
-  <rect x=".75" y=".75" width="918.5" height="508.5" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
-  <rect class="scan" x="-240" y="1" width="240" height="508" fill="url(#stack-scan)"/>
+  <rect width="920" height="766" fill="#080B10"/>
+  <rect width="920" height="766" fill="url(#stack-grid)"/>
+  <rect x=".75" y=".75" width="918.5" height="764.5" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+  <rect class="scan" x="-240" y="1" width="240" height="764" fill="url(#stack-scan)"/>
 
   <g class="mono">
     <text x="26" y="36" font-size="14" font-weight="800" fill="#00E5FF" letter-spacing="2.5">STACK // SHIPPED AI SYSTEMS</text>
-    <text x="894" y="36" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">BUILD · EVALUATE · OPERATE</text>
-    <text x="26" y="66" font-size="12" fill="#F8FAFC">The tools I use across model workflows, product runtimes, data systems, and delivery.</text>
+    <text x="894" y="36" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">06 DOMAINS &#183; ONE OPERATING STACK</text>
+    <text x="26" y="66" font-size="12" fill="#F8FAFC">Languages, model infrastructure, product runtimes, data systems, and delivery.</text>
     <line x1="26" y1="84" x2="894" y2="84" stroke="#7A8A9E" opacity=".25"/>
 
-    <g transform="translate(24 102)">
-      <rect width="428" height="180" rx="5" fill="#10141D" stroke="#7A8A9E"/>
-      <rect width="5" height="180" rx="2.5" fill="#00E5FF"/>
-      <text class="index" x="402" y="25" text-anchor="end">01 / RUNTIME</text>
-      <text class="group" x="24" y="37">CORE ENGINEERING</text>
-      <path class="flow" d="M326 44H398" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45"/>
-      <circle class="pulse" cx="399" cy="44" r="4" fill="#00E5FF" filter="url(#stack-glow)"/>
-      <line x1="24" y1="58" x2="404" y2="58" stroke="#7A8A9E" opacity=".22"/>
-      <text class="tools" x="24" y="88">Python · TypeScript · Rust · SQL</text>
-      <text class="tools" x="24" y="116">FastAPI · React · Next.js · Tauri</text>
-      <rect x="24" y="139" width="250" height="24" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".75"/>
-      <text class="practice" x="38" y="155">SERVICE · WEB · DESKTOP SYSTEMS</text>
+    <g transform="translate(20 102)">
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">01 / FOUNDATIONS</text>
+      <text class="group" x="24" y="38">LANGUAGES &amp; CORE</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="91">Python &#183; Rust &#183; C++ &#183; TypeScript</text>
+      <text class="tools" x="24" y="121">Go &#183; Lua &#183; SQL</text>
+      <rect x="24" y="153" width="236" height="25" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".78"/>
+      <text class="practice" x="38" y="170">SYSTEMS &#183; SERVICES &#183; PRODUCT</text>
     </g>
 
     <g transform="translate(468 102)">
-      <rect width="428" height="180" rx="5" fill="#10141D" stroke="#7A8A9E"/>
-      <rect width="5" height="180" rx="2.5" fill="#00E5FF"/>
-      <text class="index" x="402" y="25" text-anchor="end">02 / INTELLIGENCE</text>
-      <text class="group" x="24" y="37">AGENTS &amp; AI</text>
-      <path class="flow" d="M326 44H398" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:.4s"/>
-      <circle class="pulse" cx="399" cy="44" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:.4s"/>
-      <line x1="24" y1="58" x2="404" y2="58" stroke="#7A8A9E" opacity=".22"/>
-      <text class="tools" x="24" y="88">Claude Agent SDK · MCP · OpenAI · Gemini</text>
-      <text class="tools" x="24" y="116">RAG · tool calling · model evaluation</text>
-      <rect x="24" y="139" width="278" height="24" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".75"/>
-      <text class="practice" x="38" y="155">TOOLS · ROUTING · EVIDENCE · GUARDRAILS</text>
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">02 / INTELLIGENCE</text>
+      <text class="group" x="24" y="38">MODELS &amp; AI</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:.25s"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:.25s"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="87">PyTorch &#183; TensorFlow &#183; CUDA &#183; JAX</text>
+      <text class="tools" x="24" y="113">Triton &#183; ONNX &#183; Hugging Face</text>
+      <text class="tools" x="24" y="139">OpenAI &#183; Anthropic &#183; Gemini</text>
+      <rect x="24" y="158" width="213" height="25" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".78"/>
+      <text class="practice" x="38" y="175">TRAIN &#183; INFER &#183; EVALUATE</text>
     </g>
 
-    <g transform="translate(24 298)">
-      <rect width="428" height="180" rx="5" fill="#10141D" stroke="#7A8A9E"/>
-      <rect width="5" height="180" rx="2.5" fill="#00E5FF"/>
-      <text class="index" x="402" y="25" text-anchor="end">03 / STATE</text>
-      <text class="group" x="24" y="37">MEMORY &amp; DATA</text>
-      <path class="flow" d="M326 44H398" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:.8s"/>
-      <circle class="pulse" cx="399" cy="44" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:.8s"/>
-      <line x1="24" y1="58" x2="404" y2="58" stroke="#7A8A9E" opacity=".22"/>
-      <text class="tools" x="24" y="86">Hybrid retrieval · BM25 · knowledge graphs</text>
-      <text class="tools" x="24" y="113">PostgreSQL · ClickHouse · Neo4j · SQLite</text>
-      <text class="tools" x="24" y="140">Temporal state · bounded context</text>
-      <text class="practice" x="24" y="163">TRACEABLE CONTEXT · DURABLE STATE</text>
+    <g transform="translate(20 318)">
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">03 / ORCHESTRATION</text>
+      <text class="group" x="24" y="38">AGENTS &amp; CONTEXT</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:.5s"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:.5s"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="87">Claude Agent SDK &#183; MCP &#183; RAG &#183; tool calling</text>
+      <text class="tools" x="24" y="113">Hybrid retrieval &#183; BM25 &#183; knowledge graphs</text>
+      <text class="tools" x="24" y="139">model evaluation &#183; evidence-backed routing</text>
+      <rect x="24" y="158" width="304" height="25" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".78"/>
+      <text class="practice" x="38" y="175">TOOLS &#183; ROUTING &#183; EVIDENCE &#183; GUARDRAILS</text>
     </g>
 
-    <g transform="translate(468 298)">
-      <rect width="428" height="180" rx="5" fill="#10141D" stroke="#7A8A9E"/>
-      <rect width="5" height="180" rx="2.5" fill="#00E5FF"/>
-      <text class="index" x="402" y="25" text-anchor="end">04 / DELIVERY</text>
-      <text class="group" x="24" y="37">RELIABILITY &amp; DELIVERY</text>
-      <path class="flow" d="M326 44H398" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:1.2s"/>
-      <circle class="pulse" cx="399" cy="44" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:1.2s"/>
-      <line x1="24" y1="58" x2="404" y2="58" stroke="#7A8A9E" opacity=".22"/>
-      <text class="tools" x="24" y="86">OpenTelemetry · regression tests · release gates</text>
-      <text class="tools" x="24" y="113">Docker Compose · GitHub Actions · Playwright</text>
-      <text class="tools" x="24" y="140">Observability · incident intelligence</text>
-      <text class="practice" x="24" y="163">MEASURED · REVIEWABLE · DEPLOYABLE</text>
+    <g transform="translate(468 318)">
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">04 / EXECUTION</text>
+      <text class="group" x="24" y="38">RUNTIME &amp; PRODUCT</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:.75s"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:.75s"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="87">Ray &#183; FastAPI &#183; vLLM &#183; SGLang</text>
+      <text class="tools" x="24" y="113">Docker &#183; Kubernetes &#183; MLflow &#183; Jupyter</text>
+      <text class="tools" x="24" y="139">React &#183; Next.js &#183; Tauri</text>
+      <rect x="24" y="158" width="266" height="25" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".78"/>
+      <text class="practice" x="38" y="175">SERVICE &#183; WEB &#183; DESKTOP SYSTEMS</text>
+    </g>
+
+    <g transform="translate(20 534)">
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">05 / STATE</text>
+      <text class="group" x="24" y="38">DATA &amp; MEMORY</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:1s"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:1s"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="91">PostgreSQL &#183; ClickHouse &#183; Neo4j &#183; SQLite</text>
+      <text class="tools" x="24" y="121">Redis &#183; temporal state &#183; bounded context</text>
+      <rect x="24" y="153" width="275" height="25" rx="3" fill="#080B10" stroke="#00E5FF" opacity=".78"/>
+      <text class="practice" x="38" y="170">TRACEABLE CONTEXT &#183; DURABLE STATE</text>
+    </g>
+
+    <g transform="translate(468 534)">
+      <rect width="432" height="200" rx="6" fill="#10141D" stroke="#7A8A9E"/>
+      <rect width="5" height="200" rx="2.5" fill="#00E5FF"/>
+      <text class="index" x="406" y="25" text-anchor="end">06 / DELIVERY</text>
+      <text class="group" x="24" y="38">INFRA &amp; RELIABILITY</text>
+      <path class="flow" d="M326 45H402" fill="none" stroke="#00E5FF" stroke-dasharray="5 7" opacity=".45" style="animation-delay:1.25s"/>
+      <circle class="pulse" cx="403" cy="45" r="4" fill="#00E5FF" filter="url(#stack-glow)" style="animation-delay:1.25s"/>
+      <line x1="24" y1="60" x2="408" y2="60" stroke="#7A8A9E" opacity=".22"/>
+      <text class="tools" x="24" y="82">Terraform &#183; GCP &#183; AWS &#183; Linux &#183; Git</text>
+      <text class="tools" x="24" y="106">GitHub Actions &#183; Docker Compose &#183; Playwright</text>
+      <text class="tools" x="24" y="130">OpenTelemetry &#183; regression tests &#183; release gates</text>
+      <text class="tools" x="24" y="154">Observability &#183; incident intelligence</text>
+      <text class="practice" x="24" y="180">MEASURED &#183; REVIEWABLE &#183; DEPLOYABLE</text>
     </g>
   </g>
 </svg>
