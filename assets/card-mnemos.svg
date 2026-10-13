@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="920" height="250" role="img" aria-labelledby="title desc">
+  <title id="title">MNEMOS — self-editing bi-temporal memory for AI agents</title>
+  <desc id="desc">MNEMOS combines self-editing bi-temporal memory, six-signal retrieval, a knowledge graph, FSRS, and sleep consolidation.</desc>
+  <defs>
+    <pattern id="mn-grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#F8FAFC" fill-opacity="0.045"/>
+    </pattern>
+    <linearGradient id="mn-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="250" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="248" rx="4" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.48"/>
+  <rect x="1" y="1" width="918" height="35" rx="4" fill="#080B10"/>
+  <rect x="1" y="31" width="918" height="5" fill="#080B10"/>
+  <rect x="1" y="36" width="918" height="163" fill="url(#mn-grid)"/>
+  <line x1="1" y1="36" x2="919" y2="36" stroke="#F8FAFC" stroke-opacity="0.08"/>
+  <rect x="185" y="35" width="550" height="2" fill="url(#mn-accent)"/>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace">
+    <text x="24" y="24" font-size="11" font-weight="700" letter-spacing="2" fill="#7A8A9E">FLAGSHIP // 02</text>
+    <circle cx="770" cy="18" r="4" fill="#00E5FF"/>
+    <text x="783" y="23" font-size="11" font-weight="700" letter-spacing="1.2" fill="#00E5FF">BETA // RESEARCH</text>
+
+    <text x="34" y="83" font-size="34" font-weight="900" letter-spacing="4" fill="#F8FAFC">MNEMOS</text>
+    <text x="35" y="111" font-size="14" font-weight="600" fill="#00E5FF">Self-editing bi-temporal memory</text>
+    <text x="35" y="140" font-size="12.5" fill="#7A8A9E">Memory that can revise itself while preserving</text>
+    <text x="35" y="160" font-size="12.5" fill="#7A8A9E">when knowledge was observed and when it was valid.</text>
+
+    <text x="382" y="61" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#7A8A9E">MEMORY LIFECYCLE</text>
+    <rect x="382" y="73" width="505" height="31" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.36"/>
+    <text x="634.5" y="94" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.7" fill="#F8FAFC">ADD  ·  UPDATE  ·  DELETE  ·  NOOP</text>
+
+    <g font-size="10.5" font-weight="700" letter-spacing="1" fill="#7A8A9E">
+      <text x="382" y="127">OBSERVED TIME</text>
+      <text x="382" y="155">VALID TIME</text>
+    </g>
+    <g stroke="#00E5FF" stroke-opacity="0.5" fill="none">
+      <line x1="490" y1="123" x2="884" y2="123"/>
+      <line x1="490" y1="151" x2="884" y2="151"/>
+      <path d="M872 118L884 123L872 128M872 146L884 151L872 156"/>
+    </g>
+    <g fill="#10141D" stroke="#00E5FF" stroke-width="1.5">
+      <circle cx="534" cy="123" r="6"/><circle cx="651" cy="123" r="6"/><circle cx="807" cy="123" r="6"/>
+      <circle cx="574" cy="151" r="6"/><circle cx="718" cy="151" r="6"/><circle cx="842" cy="151" r="6"/>
+    </g>
+    <g font-size="9.5" fill="#7A8A9E" text-anchor="middle">
+      <text x="534" y="116">WRITE</text><text x="651" y="116">REVISE</text><text x="807" y="116">RECALL</text>
+      <text x="574" y="174">START</text><text x="718" y="174">CHANGE</text><text x="842" y="174">EXPIRE</text>
+    </g>
+
+    <rect x="1" y="199" width="918" height="50" fill="#080B10"/>
+    <line x1="1" y1="199" x2="919" y2="199" stroke="#F8FAFC" stroke-opacity="0.08"/>
+    <text x="28" y="229" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#00E5FF">STACK</text>
+    <g font-size="12" font-weight="600" fill="#F8FAFC">
+      <text x="111" y="229">Python</text><circle cx="171" cy="225" r="2" fill="#00E5FF"/>
+      <text x="185" y="229">MCP</text><circle cx="216" cy="225" r="2" fill="#00E5FF"/>
+      <text x="230" y="229">Neo4j</text><circle cx="279" cy="225" r="2" fill="#00E5FF"/>
+      <text x="293" y="229">FAISS</text>
+    </g>
+    <g font-size="10.5" font-weight="700" fill="#7A8A9E" text-anchor="middle">
+      <rect x="432" y="211" width="139" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.32"/>
+      <text x="501.5" y="228">6-SIGNAL RETRIEVAL</text>
+      <rect x="581" y="211" width="132" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.32"/>
+      <text x="647" y="228">KNOWLEDGE GRAPH</text>
+      <rect x="723" y="211" width="164" height="26" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.32"/>
+      <text x="805" y="228">FSRS · SLEEP CONSOLIDATION</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#00E5FF" stroke-opacity="0.5" stroke-width="1.2">
+    <path d="M9 25V9H25M895 9H911V25M9 225V241H25M895 241H911V225"/>
+  </g>
+</svg>

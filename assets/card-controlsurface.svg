@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="920" height="250" role="img" aria-labelledby="title desc">
+  <title id="title">ControlSurface — production engineering for AI agents</title>
+  <desc id="desc">ControlSurface connects AgentRunGraph telemetry to failure intelligence, regression cases, and release gates. Version 0.1.0 release candidate 1.</desc>
+  <defs>
+    <pattern id="cs-grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#F8FAFC" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="cs-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="cs-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8Z" fill="#00E5FF" fill-opacity="0.72"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="250" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="248" rx="4" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.48"/>
+  <rect x="1" y="1" width="918" height="35" rx="4" fill="#080B10"/>
+  <rect x="1" y="31" width="918" height="5" fill="#080B10"/>
+  <rect x="1" y="36" width="918" height="163" fill="url(#cs-grid)"/>
+  <line x1="1" y1="36" x2="919" y2="36" stroke="#F8FAFC" stroke-opacity="0.08"/>
+  <rect x="185" y="35" width="550" height="2" fill="url(#cs-accent)"/>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace">
+    <text x="24" y="24" font-size="11" font-weight="700" letter-spacing="2" fill="#7A8A9E">FLAGSHIP // 01</text>
+    <circle cx="762" cy="18" r="4" fill="#00E5FF"/>
+    <text x="775" y="23" font-size="11" font-weight="700" letter-spacing="1.2" fill="#00E5FF">v0.1.0-rc.1</text>
+
+    <text x="34" y="83" font-size="31" font-weight="900" letter-spacing="2.8" fill="#F8FAFC">CONTROLSURFACE</text>
+    <text x="35" y="111" font-size="14" font-weight="600" fill="#00E5FF">Production engineering for AI agents</text>
+    <text x="35" y="140" font-size="12" fill="#7A8A9E">Failures become evidence and reviewed regressions.</text>
+    <text x="35" y="160" font-size="12" fill="#7A8A9E">Release gates make decisions reproducible.</text>
+
+    <text x="383" y="61" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#7A8A9E">PRODUCTION SIGNAL → RELEASE DECISION</text>
+
+    <g font-size="11.5" font-weight="700" text-anchor="middle">
+      <rect x="382" y="78" width="111" height="66" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="437.5" y="104" fill="#F8FAFC">AgentRunGraph</text>
+      <text x="437.5" y="125" font-size="10.5" font-weight="500" fill="#7A8A9E">STRUCTURE</text>
+
+      <path d="M500 111H521" fill="none" stroke="#00E5FF" stroke-opacity="0.65" stroke-width="1.4" marker-end="url(#cs-arrow)"/>
+
+      <rect x="527" y="78" width="111" height="66" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="582.5" y="101" fill="#F8FAFC">Failure</text>
+      <text x="582.5" y="119" fill="#F8FAFC">intelligence</text>
+      <text x="582.5" y="137" font-size="9.5" font-weight="500" fill="#7A8A9E">DIAGNOSE</text>
+
+      <path d="M645 111H666" fill="none" stroke="#00E5FF" stroke-opacity="0.65" stroke-width="1.4" marker-end="url(#cs-arrow)"/>
+
+      <rect x="672" y="78" width="111" height="66" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.48"/>
+      <text x="727.5" y="101" fill="#F8FAFC">Regression</text>
+      <text x="727.5" y="119" fill="#F8FAFC">cases</text>
+      <text x="727.5" y="137" font-size="9.5" font-weight="500" fill="#7A8A9E">REVIEW</text>
+
+      <path d="M790 111H811" fill="none" stroke="#00E5FF" stroke-opacity="0.65" stroke-width="1.4" marker-end="url(#cs-arrow)"/>
+
+      <rect x="817" y="78" width="70" height="66" rx="4" fill="#00E5FF" fill-opacity="0.08" stroke="#00E5FF" stroke-opacity="0.82"/>
+      <text x="852" y="101" fill="#F8FAFC">Release</text>
+      <text x="852" y="119" fill="#F8FAFC">gates</text>
+      <text x="852" y="137" font-size="9.5" font-weight="500" fill="#00E5FF">SHIP</text>
+    </g>
+
+    <rect x="1" y="199" width="918" height="50" fill="#080B10"/>
+    <line x1="1" y1="199" x2="919" y2="199" stroke="#F8FAFC" stroke-opacity="0.08"/>
+    <text x="28" y="229" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#00E5FF">STACK</text>
+    <g font-size="12" font-weight="600" fill="#F8FAFC">
+      <text x="111" y="229">Python</text><circle cx="171" cy="225" r="2" fill="#00E5FF"/>
+      <text x="185" y="229">OpenTelemetry</text><circle cx="300" cy="225" r="2" fill="#00E5FF"/>
+      <text x="314" y="229">PostgreSQL</text><circle cx="407" cy="225" r="2" fill="#00E5FF"/>
+      <text x="421" y="229">ClickHouse</text><circle cx="505" cy="225" r="2" fill="#00E5FF"/>
+      <text x="519" y="229">Next.js</text>
+    </g>
+    <text x="890" y="229" text-anchor="end" font-size="10" letter-spacing="1.2" fill="#7A8A9E">OBSERVE · DIAGNOSE · IMPROVE · SHIP</text>
+  </g>
+
+  <g fill="none" stroke="#00E5FF" stroke-opacity="0.5" stroke-width="1.2">
+    <path d="M9 25V9H25M895 9H911V25M9 225V241H25M895 241H911V225"/>
+  </g>
+</svg>

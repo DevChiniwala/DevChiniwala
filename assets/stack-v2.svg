@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" width="920" height="430" role="img" aria-labelledby="title desc">
+  <title id="title">Production AI stack</title>
+  <desc id="desc">Selected tools and practices grouped into core engineering, agents and AI, memory and data, and reliability and delivery.</desc>
+
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7A8A9E" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
+    .group { font-size: 13px; font-weight: 700; fill: #00E5FF; letter-spacing: 1.8px; }
+    .tools { font-size: 11px; font-weight: 500; fill: #F8FAFC; letter-spacing: 0.35px; }
+    .practice { font-size: 9px; font-weight: 700; fill: #7DF9FF; letter-spacing: 1.05px; }
+    .index { font-size: 10px; font-weight: 700; fill: #7A8A9E; letter-spacing: 1px; }
+  </style>
+
+  <rect width="920" height="430" fill="#080B10"/>
+  <rect width="920" height="430" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="919" height="429" fill="none" stroke="#00E5FF" stroke-width="1"/>
+
+  <g class="mono">
+    <text x="24" y="35" font-size="13" font-weight="700" fill="#00E5FF" letter-spacing="2.5">STACK // PRODUCTION AI</text>
+    <text x="896" y="35" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">SELECTED TOOLS &amp; PRACTICES</text>
+    <text x="24" y="62" font-size="11" fill="#F8FAFC">A compact stack for building, evaluating, and operating agent systems.</text>
+    <line x1="24" y1="78" x2="896" y2="78" stroke="#10141D" stroke-width="2"/>
+
+    <!-- CORE -->
+    <g transform="translate(24 96)">
+      <rect width="428" height="142" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="142" rx="2" fill="#00E5FF"/>
+      <text class="index" x="402" y="24" text-anchor="end">01</text>
+      <text class="group" x="22" y="32">CORE</text>
+      <line x1="22" y1="48" x2="406" y2="48" stroke="#7A8A9E" stroke-width="1" opacity="0.25"/>
+      <text class="tools" x="22" y="76">Python · TypeScript · Rust · SQL</text>
+      <text class="tools" x="22" y="99">FastAPI · React · Next.js · Tauri</text>
+      <text class="practice" x="22" y="124">SERVICE · WEB · DESKTOP SYSTEMS</text>
+    </g>
+
+    <!-- AGENTS & AI -->
+    <g transform="translate(468 96)">
+      <rect width="428" height="142" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="142" rx="2" fill="#00E5FF"/>
+      <text class="index" x="402" y="24" text-anchor="end">02</text>
+      <text class="group" x="22" y="32">AGENTS &amp; AI</text>
+      <line x1="22" y1="48" x2="406" y2="48" stroke="#7A8A9E" stroke-width="1" opacity="0.25"/>
+      <text class="tools" x="22" y="76">Claude Agent SDK · MCP · OpenAI · Gemini</text>
+      <text class="tools" x="22" y="99">RAG · tool calling · evaluation</text>
+      <text class="practice" x="22" y="124">AGENT WORKFLOWS WITH EXPLICIT EVIDENCE</text>
+    </g>
+
+    <!-- MEMORY & DATA -->
+    <g transform="translate(24 254)">
+      <rect width="428" height="152" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="152" rx="2" fill="#00E5FF"/>
+      <text class="index" x="402" y="24" text-anchor="end">03</text>
+      <text class="group" x="22" y="32">MEMORY &amp; DATA</text>
+      <line x1="22" y1="48" x2="406" y2="48" stroke="#7A8A9E" stroke-width="1" opacity="0.25"/>
+      <text class="tools" x="22" y="76">Hybrid retrieval · BM25 · knowledge graphs</text>
+      <text class="tools" x="22" y="99">PostgreSQL · ClickHouse · Neo4j · SQLite</text>
+      <text class="tools" x="22" y="122">Temporal memory · bounded context</text>
+      <text class="practice" x="22" y="143">RETRIEVAL WITH TRACEABLE CONTEXT</text>
+    </g>
+
+    <!-- RELIABILITY & DELIVERY -->
+    <g transform="translate(468 254)">
+      <rect width="428" height="152" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="152" rx="2" fill="#00E5FF"/>
+      <text class="index" x="402" y="24" text-anchor="end">04</text>
+      <text class="group" x="22" y="32">RELIABILITY &amp; DELIVERY</text>
+      <line x1="22" y1="48" x2="406" y2="48" stroke="#7A8A9E" stroke-width="1" opacity="0.25"/>
+      <text class="tools" x="22" y="76">OpenTelemetry · regression tests · release gates</text>
+      <text class="tools" x="22" y="99">Docker Compose · GitHub Actions · Playwright</text>
+      <text class="tools" x="22" y="122">Observability · incident intelligence</text>
+      <text class="practice" x="22" y="143">MEASURED, REVIEWABLE, DEPLOYABLE</text>
+    </g>
+  </g>
+</svg>

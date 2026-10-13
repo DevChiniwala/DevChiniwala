@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 610" width="920" height="610" role="img" aria-labelledby="title desc">
+  <title id="title">Dev Chiniwala portfolio map</title>
+  <desc id="desc">Five independent projects grouped by their primary purpose: operate, remember, verify, and apply.</desc>
+
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7A8A9E" stroke-width="0.5" opacity="0.11"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace; }
+    .category { font-size: 12px; font-weight: 700; fill: #00E5FF; letter-spacing: 2px; }
+    .project { font-size: 22px; font-weight: 900; fill: #F8FAFC; letter-spacing: 2px; }
+    .summary { font-size: 11px; fill: #7A8A9E; letter-spacing: 0.2px; }
+    .number { font-size: 10px; font-weight: 700; fill: #00E5FF; letter-spacing: 1px; }
+  </style>
+
+  <rect width="920" height="610" fill="#080B10"/>
+  <rect width="920" height="610" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="919" height="609" fill="none" stroke="#00E5FF" stroke-width="1"/>
+
+  <g class="mono">
+    <text x="24" y="34" font-size="13" font-weight="700" fill="#00E5FF" letter-spacing="2.5">PORTFOLIO // SYSTEM MAP</text>
+    <text x="896" y="34" text-anchor="end" font-size="9" fill="#7A8A9E" letter-spacing="1.5">INDEPENDENT PROJECTS · DISTINCT JOBS</text>
+    <text x="24" y="62" font-size="11" fill="#F8FAFC">A focused set of systems for operating, remembering, verifying, and applying AI.</text>
+    <line x1="24" y1="78" x2="896" y2="78" stroke="#10141D" stroke-width="2"/>
+
+    <!-- OPERATE -->
+    <g transform="translate(24 96)">
+      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
+      <text class="category" x="22" y="57">OPERATE</text>
+      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">PRODUCTION AI</text>
+    </g>
+    <g transform="translate(190 96)">
+      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
+      <text class="number" x="680" y="24" text-anchor="end">01</text>
+      <text class="project" x="24" y="43">CONTROLSURFACE</text>
+      <text class="summary" x="24" y="69">Observability, reliability, incident intelligence, regression testing, and release gates.</text>
+      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">AGENT PRODUCTION ENGINEERING</text>
+    </g>
+
+    <!-- REMEMBER -->
+    <g transform="translate(24 216)">
+      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
+      <text class="category" x="22" y="57">REMEMBER</text>
+      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">AGENT MEMORY</text>
+    </g>
+    <g transform="translate(190 216)">
+      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
+      <text class="number" x="680" y="24" text-anchor="end">02</text>
+      <text class="project" x="24" y="43">MNEMOS</text>
+      <text class="summary" x="24" y="69">Bi-temporal memory, hybrid retrieval, knowledge graphs, and cognitive decay.</text>
+      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">SELF-EDITING MEMORY RUNTIME</text>
+    </g>
+
+    <!-- VERIFY -->
+    <g transform="translate(24 336)">
+      <rect width="146" height="104" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
+      <text class="category" x="22" y="57">VERIFY</text>
+      <text x="22" y="79" font-size="9" fill="#7A8A9E" letter-spacing="1">INTELLIGENCE</text>
+    </g>
+    <g transform="translate(190 336)">
+      <rect width="706" height="104" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="104" rx="2" fill="#00E5FF"/>
+      <text class="number" x="680" y="24" text-anchor="end">03</text>
+      <text class="project" x="24" y="43">CORTEXOS</text>
+      <text class="summary" x="24" y="69">Autonomous research, market-signal analysis, insight verification, and reporting.</text>
+      <text x="24" y="89" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1.2">VERIFICATION-FIRST RESEARCH</text>
+    </g>
+
+    <!-- APPLY -->
+    <g transform="translate(24 456)">
+      <rect width="146" height="128" rx="3" fill="#10141D" stroke="#00E5FF" stroke-width="1"/>
+      <circle cx="22" cy="22" r="4" fill="#7DF9FF"/>
+      <text class="category" x="22" y="64">APPLY</text>
+      <text x="22" y="86" font-size="9" fill="#7A8A9E" letter-spacing="1">FOCUSED PRODUCTS</text>
+    </g>
+    <g transform="translate(190 456)">
+      <rect width="343" height="128" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="128" rx="2" fill="#00E5FF"/>
+      <text class="number" x="319" y="24" text-anchor="end">04</text>
+      <text x="24" y="46" font-size="19" font-weight="900" fill="#F8FAFC" letter-spacing="2">VYGOT</text>
+      <text class="summary" x="24" y="73">Adaptive learning and</text>
+      <text class="summary" x="24" y="91">cognitive intelligence.</text>
+      <text x="24" y="112" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1">LEARNING SYSTEMS</text>
+    </g>
+    <g transform="translate(549 456)">
+      <rect width="347" height="128" rx="3" fill="#10141D" stroke="#7A8A9E" stroke-width="1" opacity="0.98"/>
+      <rect x="0" y="0" width="4" height="128" rx="2" fill="#00E5FF"/>
+      <text class="number" x="323" y="24" text-anchor="end">05</text>
+      <text x="24" y="46" font-size="19" font-weight="900" fill="#F8FAFC" letter-spacing="2">HEYCLARA</text>
+      <text class="summary" x="24" y="73">Background automation and</text>
+      <text class="summary" x="24" y="91">long-term assistant memory.</text>
+      <text x="24" y="112" font-size="9" font-weight="700" fill="#7DF9FF" letter-spacing="1">PERSONAL AUTOMATION</text>
+    </g>
+  </g>
+</svg>

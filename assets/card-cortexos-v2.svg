@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="920" height="250" role="img" aria-labelledby="title desc">
+  <title id="title">CortexOS — evidence-backed company research</title>
+  <desc id="desc">CortexOS combines multi-agent research workflows with deterministic Rust source verification in a Tauri and React application backed by SQLite.</desc>
+  <defs>
+    <pattern id="cx-grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M0 23H46M23 0V46" fill="none" stroke="#F8FAFC" stroke-opacity="0.025"/>
+    </pattern>
+    <linearGradient id="cx-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="cx-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8Z" fill="#00E5FF" fill-opacity="0.72"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="250" fill="#080B10"/>
+  <rect x="1" y="1" width="918" height="248" rx="4" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.48"/>
+  <rect x="1" y="1" width="918" height="35" rx="4" fill="#080B10"/>
+  <rect x="1" y="31" width="918" height="5" fill="#080B10"/>
+  <rect x="1" y="36" width="918" height="163" fill="url(#cx-grid)"/>
+  <line x1="1" y1="36" x2="919" y2="36" stroke="#F8FAFC" stroke-opacity="0.08"/>
+  <rect x="185" y="35" width="550" height="2" fill="url(#cx-accent)"/>
+
+  <g font-family="'JetBrains Mono','Fira Code','SF Mono','Cascadia Code',monospace">
+    <text x="24" y="24" font-size="11" font-weight="700" letter-spacing="2" fill="#7A8A9E">FLAGSHIP // 03</text>
+    <circle cx="730" cy="18" r="4" fill="#00E5FF"/>
+    <text x="743" y="23" font-size="11" font-weight="700" letter-spacing="1.2" fill="#00E5FF">DETERMINISTIC VERIFY</text>
+
+    <text x="34" y="83" font-size="33" font-weight="900" letter-spacing="3.5" fill="#F8FAFC">CORTEXOS</text>
+    <text x="35" y="111" font-size="14" font-weight="600" fill="#00E5FF">Evidence-backed company research</text>
+    <text x="35" y="140" font-size="12" fill="#7A8A9E">Multi-agent research with deterministic</text>
+    <text x="35" y="160" font-size="12" fill="#7A8A9E">verification against source evidence.</text>
+
+    <text x="382" y="61" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#7A8A9E">RESEARCH → VERIFIED OUTPUT</text>
+
+    <g font-size="11.5" font-weight="700" text-anchor="middle">
+      <rect x="382" y="82" width="112" height="61" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.4"/>
+      <text x="438" y="107" fill="#F8FAFC">Multi-agent</text>
+      <text x="438" y="126" fill="#F8FAFC">workflow</text>
+
+      <path d="M501 112H534" fill="none" stroke="#00E5FF" stroke-opacity="0.65" stroke-width="1.4" marker-end="url(#cx-arrow)"/>
+
+      <path d="M542 82H651L667 112L651 143H542L526 112Z" fill="#00E5FF" fill-opacity="0.075" stroke="#00E5FF" stroke-opacity="0.78"/>
+      <text x="596.5" y="103" fill="#00E5FF">RUST</text>
+      <text x="596.5" y="122" fill="#F8FAFC">SOURCE</text>
+      <text x="596.5" y="137" font-size="9.5" font-weight="500" fill="#7A8A9E">VERIFICATION</text>
+
+      <path d="M673 112H706" fill="none" stroke="#00E5FF" stroke-opacity="0.65" stroke-width="1.4" marker-end="url(#cx-arrow)"/>
+
+      <rect x="713" y="82" width="174" height="61" rx="4" fill="#080B10" stroke="#00E5FF" stroke-opacity="0.4"/>
+      <text x="800" y="107" fill="#F8FAFC">Evidence-backed</text>
+      <text x="800" y="126" fill="#F8FAFC">company research</text>
+    </g>
+
+    <g font-size="10" font-weight="700" letter-spacing="1.2" text-anchor="middle">
+      <rect x="382" y="157" width="141" height="25" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.28"/>
+      <text x="452.5" y="174" fill="#7A8A9E">MULTI-AGENT</text>
+      <rect x="533" y="157" width="154" height="25" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.28"/>
+      <text x="610" y="174" fill="#7A8A9E">SOURCE EVIDENCE</text>
+      <rect x="697" y="157" width="190" height="25" rx="3" fill="#10141D" stroke="#00E5FF" stroke-opacity="0.28"/>
+      <text x="792" y="174" fill="#7A8A9E">DETERMINISTIC PIPELINE</text>
+    </g>
+
+    <rect x="1" y="199" width="918" height="50" fill="#080B10"/>
+    <line x1="1" y1="199" x2="919" y2="199" stroke="#F8FAFC" stroke-opacity="0.08"/>
+    <text x="28" y="229" font-size="10.5" font-weight="700" letter-spacing="1.8" fill="#00E5FF">STACK</text>
+    <g font-size="12" font-weight="600" fill="#F8FAFC">
+      <text x="111" y="229">Tauri</text><circle cx="156" cy="225" r="2" fill="#00E5FF"/>
+      <text x="170" y="229">React</text><circle cx="216" cy="225" r="2" fill="#00E5FF"/>
+      <text x="230" y="229">Rust</text><circle cx="269" cy="225" r="2" fill="#00E5FF"/>
+      <text x="283" y="229">SQLite</text>
+    </g>
+    <text x="890" y="229" text-anchor="end" font-size="10" letter-spacing="1.2" fill="#7A8A9E">RESEARCH · VERIFY · TRACE TO SOURCE</text>
+  </g>
+
+  <g fill="none" stroke="#00E5FF" stroke-opacity="0.5" stroke-width="1.2">
+    <path d="M9 25V9H25M895 9H911V25M9 225V241H25M895 241H911V225"/>
+  </g>
+</svg>
